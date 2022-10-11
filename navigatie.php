@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/navigatie.css">
 
-
+    <script src="https://kit.fontawesome.com/3f5b3fe9f7.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -24,7 +24,22 @@
 
         </ul>
     </header>
-    <script src="https://kit.fontawesome.com/3f5b3fe9f7.js" crossorigin="anonymous"></script>
+    <div class="zijnavigatie">
+        <div class="deroset">
+
+            <p>De Roset</p>
+
+        </div>
+        <div class="smaakdag">
+            <h4>Smaak van de dag</h4>
+        </div>
+        <div class="smaakpop">
+            <h4>Populaire smaken</h4>
+        </div>
+
+
+    </div>
+
 </body>
 
 

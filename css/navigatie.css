@@ -15,7 +15,9 @@ html {
 }
 body {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
+  width: 80vw;
+  column-gap: 5%;
 }
 body header ul {
   width: 100%;
@@ -35,6 +37,13 @@ header {
   background-color: white;
   justify-content: space-around;
   align-items: center;
-  height: 15%;
-  width: 80vw;
+  height: 7%;
+  width: 50vw;
+  margin-top: 2%;
+}
+.zijnavigatie {
+  width: 30vw;
+  background-color: white;
+  height: 50vw;
+  margin-top: 2%;
 }

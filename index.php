@@ -2,7 +2,7 @@
 
 
 include 'database.php';
-include 'navigatie.php';
+
 
 ?>
 
@@ -17,21 +17,27 @@ include 'navigatie.php';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="index.css"></script>
+    <script src="style.css"></script>
 
 </head>
 
 <body>
 
+    <?php  // hallo met pc 
+        include 'navigatie.php';
+    ?>
 
 
+
+
+
+
+
+
+
+    <?php
+     require 'footer.php';
+    ?>
 </body>
 
 </html>
-
-<?php
-
-
-
-include 'footer.php';
-?>
