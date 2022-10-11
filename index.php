@@ -1,4 +1,4 @@
-<?php
+<?php  // hallo
 
 
 include 'database.php';
