@@ -1,7 +1,7 @@
 * {
   margin: 0;
-  display: flex;
-  justify-content: center;
+
+  font-family: helvetica, sans-serif;
 }
 html {
   background-image: url("https://wallpaperforu.com/wp-content/uploads/2020/06/paste-wallpaper-20061714154610-scaled.jpg");
@@ -10,18 +10,31 @@ html {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  display: flex;
+  justify-content: center;
 }
 body {
   display: flex;
   flex-direction: row;
 }
-
+body header ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+body header ul li a {
+  text-decoration: none;
+}
+li {
+  text-decoration: none;
+  list-style: none;
+}
 header {
   display: flex;
   background-color: white;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   height: 15%;
   width: 80vw;
-  top: 2%;
 }

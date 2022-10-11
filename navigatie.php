@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/navigatie.css">
 
 
+
 </head>
 
 <body>
@@ -19,11 +20,11 @@
             <li><a href="">Blog</a></li>
             <li><a href="">Contact</a></li>
             <li><a href="">Winkelmandje</a></li>
-
+            <li><i class="fa-regular fa-user"></i></li>
 
         </ul>
     </header>
-
+    <script src="https://kit.fontawesome.com/3f5b3fe9f7.js" crossorigin="anonymous"></script>
 </body>
 
 
