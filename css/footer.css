@@ -1,10 +1,25 @@
 footer {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
   position: fixed;
-  padding: 10px 10px 0px 10px;
-  bottom: 0;
-  width: 100%;
+
+  bottom: 2%;
+  width: 80vw;
   /* Height of the footer*/
-  height: 40px;
-  background: grey;
+  height: 15%;
+  background-color: white;
+}
+.adres {
+  display: flex;
+  flex-direction: column;
+}
+.bezorg {
+  display: flex;
+  flex-direction: column;
+}
+.voorwaarden {
+  display: flex;
+  flex-direction: column;
 }

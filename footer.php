@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/footer.css">
+
 </head>
 
 <body>
@@ -14,7 +14,7 @@
         <div class="adres">
             <p>Ons adres:</p>
             <p>9184LK</p>
-            <p>Mannengrottenstraat 77</p>
+            <p>Mannengrottenstraat 77</p>   
             <p>Castricum</p>
         </div>
         <div class="bezorg">
