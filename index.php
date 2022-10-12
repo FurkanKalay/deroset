@@ -1,4 +1,4 @@
-<?php  // hallo met pc 
+<?php  // hallo met pc
 
 
 include 'database.php';
@@ -17,15 +17,17 @@ include 'database.php';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="style.css"></script>
 
+    <script src="https://kit.fontawesome.com/3f5b3fe9f7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/navigatie.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
 
 <body>
 
-    <?php  // hallo met pc 
+    <?php  // hallo met pc
         include 'navigatie.php';
-    ?>
+?>
 
 
 
@@ -36,8 +38,8 @@ include 'database.php';
 
 
     <?php
-     require 'footer.php';
-    ?>
+ require 'footer.php';
+?>
 </body>
 
 </html>

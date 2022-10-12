@@ -14,8 +14,9 @@ html {
   justify-content: center;
 }
 body {
-  display: flex;
-  flex-direction: row-reverse;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 5fr 2fr;
   width: 80vw;
   column-gap: 5%;
 }
