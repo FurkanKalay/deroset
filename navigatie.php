@@ -18,15 +18,10 @@
 
     </ul>
 </header>
-<div class="zijnavigatie">
+<div class="smaakdag">
+    <h4>Smaak van de dag</h4>
+</div>
 
-
-    <div class="smaakdag">
-        <h4>Smaak van de dag</h4>
-    </div>
-    <div class="smaakpop">
-        <h4>Populaire smaken</h4>
-    </div>
-
-
+<div class="smaakpop">
+    <h4>Populaire smaken</h4>
 </div>

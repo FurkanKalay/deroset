@@ -4,6 +4,23 @@ header {
   grid-row-start: 1;
   grid-row-end: 2;
   background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10%;
+}
+body header ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+body header ul li a {
+  text-decoration: none;
+}
+li {
+  text-decoration: none;
+  list-style: none;
 }
 .deroset {
   grid-column-start: 1;
@@ -11,11 +28,21 @@ header {
   grid-row-start: 1;
   grid-row-end: 2;
   background-color: white;
+  border-radius: 5%;
 }
-.zijnavigatie {
+.smaakdag {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 3;
   background-color: white;
+  border-radius: 5%;
+}
+.smaakpop {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  background-color: white;
+  border-radius: 5%;
 }

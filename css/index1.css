@@ -18,7 +18,7 @@ body {
   margin-bottom: 3%;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr 5fr 2fr;
+  grid-template-rows: 1fr 2fr 5fr 2fr;
   width: 80vw;
   column-gap: 5%;
   row-gap: 5%;
