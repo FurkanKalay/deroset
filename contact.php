@@ -1,12 +1,6 @@
 <?php  // hallo met pc
-
-
 include 'php/database.php';
-
-
 ?>
-
-
 
 
 
@@ -31,8 +25,16 @@ include 'php/database.php';
     ?>
 
     <div class="front">
+        <div class="bestellen">
+            <h2>Smaken</h2>
 
 
+            <div class="smaken">
+                1
+            </div>
+
+
+        </div>
     </div>
 
 
@@ -40,10 +42,9 @@ include 'php/database.php';
 
 
 
-
     <?php
- require 'footer.php';
-?>
+        require 'footer.php';
+    ?>
 </body>
 
 </html>

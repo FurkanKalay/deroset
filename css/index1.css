@@ -31,67 +31,6 @@ body {
   grid-row-end: 4;
   background-color: white;
   border-radius: 5%;
-}
-.overonsinhoud {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1r;
-  column-gap: 5%;
-  row-gap: 5%;
-}
-
-.overons {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 10fr;
-}
-
-.overons h2 {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
-}
-.overons .overonsinhoud {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
-.overons .overonsinhoud .een {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  font-size: 1rem;
-}
-.overons .overonsinhoud .eenplaatje {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
   width: 100%;
   height: 100%;
-  object-fit: scale-down;
-}
-.overons .overonsinhoud .twee {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
-.overons .overonsinhoud .tweeplaatje {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 3;
-  grid-row-end: 4;
-  width: 100%;
-  height: 100%;
-  object-fit: scale-down;
-}
-.overons .overonsinhoud .drie {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 3;
-  grid-row-end: 4;
 }

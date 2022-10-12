@@ -18,23 +18,30 @@ include 'php/database.php';
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+   
     <?php  // hallo met pc
         include 'php/links.php';
     ?>
-
 </head>
 
 <body>
 
     <?php  // hallo met pc
         include 'navigatie.php';
-    ?>
+?>
 
     <div class="front">
+        <div class="bestellen">
+            <h2>Smaken</h2>
 
 
+            <div class="smaken">
+                1
+            </div>
+
+
+        </div>
     </div>
-
 
 
 
