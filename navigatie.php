@@ -9,7 +9,7 @@
 <header>
 
     <ul>
-        <li><a href="">Over Ons</a></li>
+        <li><a href="overons.php">Over Ons</a></li>
         <li><a href="">Bestellen</a></li>
         <li><a href="">Blog</a></li>
         <li><a href="">Contact</a></li>
