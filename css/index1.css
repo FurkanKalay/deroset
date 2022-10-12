@@ -40,14 +40,30 @@ body {
   row-gap: 5%;
 }
 
+.overons {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 10fr;
+}
+
 .overons h2 {
-  margin: 1%;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.overons .overonsinhoud {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
 .overons .overonsinhoud .een {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
+  font-size: 1rem;
 }
 .overons .overonsinhoud .eenplaatje {
   grid-column-start: 2;

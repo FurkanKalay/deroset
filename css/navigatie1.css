@@ -17,6 +17,7 @@ body header ul {
 }
 body header ul li a {
   text-decoration: none;
+  font-size: 1rem;
 }
 li {
   text-decoration: none;
