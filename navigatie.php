@@ -1,18 +1,10 @@
-<div class="zijnavigatie">
-    <div class="deroset">
+<div class="deroset">
 
-        <p>De Roset</p>
-
-    </div>
-    <div class="smaakdag">
-        <h4>Smaak van de dag</h4>
-    </div>
-    <div class="smaakpop">
-        <h4>Populaire smaken</h4>
-    </div>
-
+    <p>De Roset</p>
 
 </div>
+
+
 
 <header>
 
@@ -26,3 +18,15 @@
 
     </ul>
 </header>
+<div class="zijnavigatie">
+
+
+    <div class="smaakdag">
+        <h4>Smaak van de dag</h4>
+    </div>
+    <div class="smaakpop">
+        <h4>Populaire smaken</h4>
+    </div>
+
+
+</div>

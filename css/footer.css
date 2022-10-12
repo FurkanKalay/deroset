@@ -3,7 +3,6 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  position: fixed;
 
   bottom: 2%;
   width: 80vw;
