@@ -23,3 +23,12 @@ body {
   column-gap: 5%;
   row-gap: 5%;
 }
+
+.front {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  background-color: white;
+  border-radius: 5%;
+}

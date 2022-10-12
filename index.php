@@ -1,7 +1,7 @@
 <?php  // hallo met pc
 
 
-include 'database.php';
+include 'php/database.php';
 
 
 ?>
@@ -30,7 +30,10 @@ include 'database.php';
         include 'navigatie.php';
 ?>
 
+    <div class="front">
 
+
+    </div>
 
 
 

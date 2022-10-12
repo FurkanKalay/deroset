@@ -1,5 +1,5 @@
 <div class="deroset">
-
+    <img src="assets/cake.jpg" alt="" srcset="">
     <p>De Roset</p>
 
 </div>

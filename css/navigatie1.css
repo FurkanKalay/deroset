@@ -29,6 +29,13 @@ li {
   grid-row-end: 2;
   background-color: white;
   border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.deroset img {
+  width: 20%;
 }
 .smaakdag {
   grid-column-start: 1;
