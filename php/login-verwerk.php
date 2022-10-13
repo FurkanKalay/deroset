@@ -7,7 +7,7 @@ if (isset($_POST['submit']) && $_POST['email'] != '' && $_POST['password'] != ''
     require 'database.php';
     $wachtwoord = $_POST['password'];
     $email = $_POST['email'];
-    $sql = "SELECT * FROM gebruikers WHERE email ='$email' AND wachtwoord ='$wachtwoord'";
+    $sql = "SELECT * FROM user WHERE email ='$email' AND wachtwoord ='$wachtwoord'";
     // $sql = "SELECT * FROM gebruikers WHERE wachtwoord ='$wachtwoord'";
 
     $result = $mysqli->query($sql);
