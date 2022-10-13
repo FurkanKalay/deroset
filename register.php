@@ -31,14 +31,14 @@ include 'php/database.php';
 <body>
 
 
-    <div class="container " style="grid-column-start: 1;
+    <div class="hoi " style="grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 2;">
 
-        <div class="row py-5 px-5">
+        <div class="hoi1 ">
 
-            <div class="col py-5 px-5">
+            <div class="hoi2 py-5 px-5">
                 <h1>Registreer</h1>
                 <p>Of ga terug naar het beginpagina <a href="index.php" class="link-primary">hier.</a> </p>
 
@@ -75,6 +75,24 @@ include 'php/database.php';
                         <input type="password" class="form-control" id="wachtwoord" name="wachtwoord"
                             placeholder="Password">
                     </div>
+                    <div class="form-group">
+                        <label for="exampleInputUser1">Name</label>
+                        <input type="text" class="form-control" id="voornaam" name="voornaam"
+                            aria-describedby="userHelp" placeholder="Enter Username">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputUser1">adress</label>
+                        <input type="text" class="form-control" id="voornaam" name="voornaam"
+                            aria-describedby="userHelp" placeholder="Enter Username">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputUser1">Name</label>
+                        <input type="text" class="form-control" id="voornaam" name="voornaam"
+                            aria-describedby="userHelp" placeholder="Enter Username">
+
+                    </div>
 
                     <div class="bootstrap-iso">
                         <div class="container-fluid px-0">
@@ -100,6 +118,12 @@ include 'php/database.php';
                             </div>
                         </div>
                     </div>
+
+
+
+
+
+
                     <div class="link">
                         Already have a account? Log in <a href="login.php" class="link-primary">here.</a>
                     </div>

@@ -23,8 +23,8 @@ if (isset($_POST["submit"])) { // als submit gevult is en niet staat aan NULL vo
         include 'database.php';
 
 
-        $sql = "INSERT INTO gebruikers (voornaam, achternaam, email, wachtwoord, telefoonnummer, geboortedatum, rol)
-                VALUES ('$voornaam', '$achternaam','$email', '$wachtwoord', '$telefoonnummer','$geboortedatum','$rol')";
+        $sql = "INSERT INTO users (firstname, lastname, email, password, date_of_birth, phonenumber, adress, zipcode, city, role)
+                VALUES ('$voornaam', '$achternaam','$email', '$wachtwoord', '$geboortedatum', '$telefoonnummer','','$rol')";
 
         // Voer de INSERT INTO STATEMENT uit/ execute de query in het database
         mysqli_query($conn, $sql);
