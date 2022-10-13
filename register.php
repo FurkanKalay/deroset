@@ -43,7 +43,7 @@ include 'php/database.php';
                 <p>Of ga terug naar het beginpagina <a href="index.php" class="link-primary">hier.</a> </p>
 
 
-                <form class="py-5 px-5 " method="POST" action="register.php">
+                <form class="py-5 px-5 " method="POST" action="php/register-verwerk.php">
                     <div class="form-group">
                         <label for="exampleInputUser1">Name</label>
                         <input type="text" class="form-control" id="voornaam" name="voornaam"
@@ -76,21 +76,21 @@ include 'php/database.php';
                             placeholder="Password">
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputUser1">Name</label>
-                        <input type="text" class="form-control" id="voornaam" name="voornaam"
-                            aria-describedby="userHelp" placeholder="Enter Username">
-
-                    </div>
-                    <div class="form-group">
                         <label for="exampleInputUser1">adress</label>
-                        <input type="text" class="form-control" id="voornaam" name="voornaam"
-                            aria-describedby="userHelp" placeholder="Enter Username">
+                        <input type="text" class="form-control" id="voornaam" name="adress" aria-describedby="userHelp"
+                            placeholder="Enter Username">
 
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputUser1">Name</label>
-                        <input type="text" class="form-control" id="voornaam" name="voornaam"
-                            aria-describedby="userHelp" placeholder="Enter Username">
+                        <label for="exampleInputUser1">zipcode</label>
+                        <input type="text" class="form-control" id="voornaam" name="zipcode" aria-describedby="userHelp"
+                            placeholder="Enter Username">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputUser1">city</label>
+                        <input type="text" class="form-control" id="voornaam" name="city" aria-describedby="userHelp"
+                            placeholder="Enter Username">
 
                     </div>
 

@@ -8,6 +8,9 @@ if (isset($_POST["submit"])) { // als submit gevult is en niet staat aan NULL vo
         && !empty($_POST["wachtwoord"])
         && !empty($_POST["telefoonnummer"])
         && !empty($_POST["date"])
+        && !empty($_POST["adress"])
+        && !empty($_POST["zipcode"])
+        && !empty($_POST["city"])
 
     ) {
         $voornaam = $_POST["voornaam"]; // variabeles aan het zetten door post method te gebruiken
@@ -16,6 +19,10 @@ if (isset($_POST["submit"])) { // als submit gevult is en niet staat aan NULL vo
         $wachtwoord = $_POST["wachtwoord"];
         $telefoonnummer = $_POST["telefoonnummer"];
         $geboortedatum = $_POST["date"];
+        $adress = $_POST["adress"];
+        $zipcode = $_POST["zipcode"];
+        $city = $_POST["city"];
+
 
         $rol = "klant";
 
@@ -24,7 +31,7 @@ if (isset($_POST["submit"])) { // als submit gevult is en niet staat aan NULL vo
 
 
         $sql = "INSERT INTO users (firstname, lastname, email, password, date_of_birth, phonenumber, adress, zipcode, city, role)
-                VALUES ('$voornaam', '$achternaam','$email', '$wachtwoord', '$geboortedatum', '$telefoonnummer','','$rol')";
+                VALUES ('$voornaam', '$achternaam','$email', '$wachtwoord', '$geboortedatum', '$telefoonnummer','$adress','$zipcode','$city','$rol')";
 
         // Voer de INSERT INTO STATEMENT uit/ execute de query in het database
         mysqli_query($conn, $sql);
@@ -34,4 +41,3 @@ if (isset($_POST["submit"])) { // als submit gevult is en niet staat aan NULL vo
         header("location: login.php");
     }
 }
-include "navigatie.php";
