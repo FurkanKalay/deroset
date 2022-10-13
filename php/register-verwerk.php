@@ -38,6 +38,6 @@ if (isset($_POST["submit"])) { // als submit gevult is en niet staat aan NULL vo
 
         echo "Inserted successfully";
         mysqli_close($conn); // Sluit de database verbinding want er hoeven geen queries meer uitgevoerd te worden
-        header("location: login.php");
+        header("location: http://localhost/deroset/login.php");
     }
 }
