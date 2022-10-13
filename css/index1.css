@@ -36,6 +36,10 @@ body {
 }
 
 @media screen and (max-width: 800px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
   header,
   .front,
   .deroset,
