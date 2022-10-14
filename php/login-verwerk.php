@@ -1,5 +1,6 @@
 <?php
 
+session_start();
 
 if (isset($_POST['submit']) && $_POST['email'] != '' && $_POST['password'] != '') {
     //code wordt uitgevoerd als het formulier goed wordt ingevuld
