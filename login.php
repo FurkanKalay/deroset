@@ -43,7 +43,7 @@ include 'php/database.php';
                 <h1>Login</h1>
                 <p>Of ga terug naar het beginpagina <a href="index.php" class="link-primary">hier.</a> </p>
 
-                <form class="py-5 px-5" method="POST" action="login.php">
+                <form class="py-5 px-5" method="POST" action="php/login-verwerk.php">
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email address</label>
                         <input type="email" class="form-control" id="exampleInputEmail1" name="email"

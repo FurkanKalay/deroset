@@ -7,7 +7,7 @@ if (isset($_POST['submit']) && $_POST['email'] != '' && $_POST['password'] != ''
     require 'database.php';
     $wachtwoord = $_POST['password'];
     $email = $_POST['email'];
-    $sql = "SELECT * FROM user WHERE email ='$email' AND wachtwoord ='$wachtwoord'";
+    $sql = "SELECT * FROM users WHERE email ='$email' AND password ='$wachtwoord'";
     // $sql = "SELECT * FROM gebruikers WHERE wachtwoord ='$wachtwoord'";
 
     $result = $mysqli->query($sql);
@@ -18,14 +18,14 @@ if (isset($_POST['submit']) && $_POST['email'] != '' && $_POST['password'] != ''
     print_r($rows);
 
 
-    $_SESSION['rol'] = $rows['rol'];
+    $_SESSION['rol'] = $rows['role'];
 
     $_SESSION['gebruiker_id'] = $rows['id'];
-    $_SESSION['naam'] = $rows['voornaam'];
+    $_SESSION['naam'] = $rows['firstname'];
 
     print_r($rows);
 
-    header("location: index.php");
+    header("location: http://localhost/deroset/index.php");
 } else {
     // echo 'fill out the form';
 }
