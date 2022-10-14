@@ -56,7 +56,7 @@ if ($result = mysqli_query($conn, $sql)) {
                 <p>Of ga terug naar het beginpagina <a href="index.php" class="link-primary">hier.</a> </p>
 
 
-                <form class="py-5 px-5 " method="POST" action="php/register-verwerk.php">
+                <form class="py-5 px-5 " method="POST" action="php/gebruiker-update-verwerk.php">
                     <input type="hidden" name="id" value="<?php echo $user["id"] ?>">
                     <div class="form-group">
                         <label for="exampleInputUser1">Naam</label>
@@ -88,6 +88,12 @@ if ($result = mysqli_query($conn, $sql)) {
                         <label for="exampleInputPassword1">Password</label>
                         <input type="password" class="form-control" id="wachtwoord" name="wachtwoord"
                             value="<?php echo $user["password"] ?>">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputUser1">geboortedatum</label>
+                        <input type="text" class="form-control" id="voornaam" name="geboortedatum"
+                            aria-describedby="userHelp" value="<?php echo $user["date_of_birth"] ?>">
+
                     </div>
                     <div class="form-group">
                         <label for="exampleInputUser1">adress</label>
@@ -153,63 +159,7 @@ if ($result = mysqli_query($conn, $sql)) {
 
 
 
-    <div class="container px-5 py-5" style="grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;">
-        <div class="row px-5 py-5">
-            <div class="col px-5 py-5 text-center">
-                <form action="updateaccountverwerk.php" method="post">
-                    <input type="hidden" name="id" value="<?php echo $user["id"] ?>">
-                    <div class="form-group">
-                        <label for="voornaam">Voornaam</label>
-                        <input type="text" name="voornaam" id="voornaam" value="<?php echo $user["firstname"] ?>">
-                    </div>
-                    <div class=" form-group">
-                        <label for="achternaam">Achternaam</label>
-                        <input type="text" name="achternaam" id="achternaam" value="<?php echo $user["lastname"] ?>">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" value="<?php echo $user["email"] ?>">
-                    </div>
-                    <div class="form-group">
-                        <label for="wachtwoord">Wachtwoord</label>
-                        <input type="text" name="wachtwoord" id="wachtwoord" value="<?php echo $user["password"] ?>">
-                    </div>
-                    <div class="form-group">
-                        <label for="telefoonnummer">Telefoonnummer</label>
-                        <input type="text" name="telefoonnummer" id="telefoonnummer"
-                            value="<?php echo $user["phonenumber"] ?>">
-                    </div>
-                    <div class="form-group">
-                        <label for="geboortedatum">Geboortedatum</label>
-                        <input type="text" name="geboortedatum" id="geboortedatum"
-                            value="<?php echo $user["date_of_birth"] ?>">
-                    </div>
-                    <div class="form-group">
-                        <label for="geboortedatum">Adress</label>
-                        <input type="text" name="adress" id="geboortedatum" value="<?php echo $user["adress"] ?>">
-                    </div>
-                    <div class="form-group">
-                        <label for="geboortedatum">Zipcode</label>
-                        <input type="text" name="zipcode" id="geboortedatum" value="<?php echo $user["zipcode"] ?>">
-                    </div>
-                    <div class="form-group">
-                        <label for="geboortedatum">City</label>
-                        <input type="text" name="city" id="geboortedatum" value="<?php echo $user["city"] ?>">
-                    </div>
 
-                    <div class="form-group py-5">
-                        <button type="submit" class="btn btn-info" name="submit">Update gebruiker!</button>
-
-                    </div>
-
-
-                </form>
-            </div>
-        </div>
-    </div>
 
 
 
