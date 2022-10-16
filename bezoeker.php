@@ -7,7 +7,7 @@
         <li><a href="contact.php">Contact</a></li>
 
 
-        <li><a href="login.php" i class="fa-regular fa-user">Login om meer te zien</i></a></li>
+        <li><a href="login.php" i class="fa-regular fa-user"></i></a> Login om meer te zien</li>
 
 
 

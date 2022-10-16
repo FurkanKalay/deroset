@@ -1,7 +1,7 @@
 <?php  // hallo met pc
 include 'php/database.php';
 session_start();
-$id =  $_SESSION['gebruiker_id'];
+$id = $_GET["id"];
 
 $sql = "SELECT * FROM users WHERE id = $id LIMIT 1";
 
@@ -139,30 +139,6 @@ if ($result = mysqli_query($conn, $sql)) {
             </div>
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 </body>

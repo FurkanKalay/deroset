@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+
+  font-family: helvetica, sans-serif;
+}
+html {
+  background-image: url("https://wallpaperforu.com/wp-content/uploads/2020/06/paste-wallpaper-20061714154610-scaled.jpg");
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
