@@ -31,6 +31,8 @@ if ($result = mysqli_query($conn, $sql)) {
 
 <body>
     <table class="table ">
+        <a href="product-maak.php" class="btn btn-danger"><button class="button-11" role="button">voeg
+                product</button></a>
         <thead>
             <tr>
                 <th>id</th>
@@ -52,7 +54,7 @@ if ($result = mysqli_query($conn, $sql)) {
                 <td><?php echo $mel["category"] ?></td>
 
 
-                <td><a href="meldingen-delete.php?id=<?php echo $mel["id"] ?>" class="btn btn-danger"><button
+                <td><a href="product-update.php?id=<?php echo $mel["id"] ?>" class="btn btn-danger"><button
                             class="button-11" role="button">update</button></a></td>
 
                 <td><a href="php/product-delete-verwerk.php?id=<?php echo $mel["id"] ?>" class="btn btn-danger"><button

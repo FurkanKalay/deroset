@@ -1,15 +1,5 @@
 <?php  // hallo met pc
 include 'php/database.php';
-session_start();
-$id = $_GET["id"];
-
-$sql = "SELECT * FROM products WHERE id = $id LIMIT 1";
-
-if ($result = mysqli_query($conn, $sql)) {
-    $user = mysqli_fetch_assoc($result);
-}
-
-
 ?>
 
 
@@ -41,9 +31,6 @@ if ($result = mysqli_query($conn, $sql)) {
 <body>
 
 
-
-
-
     <div class="hoi " style="grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 1;
@@ -52,47 +39,43 @@ if ($result = mysqli_query($conn, $sql)) {
         <div class="hoi1 ">
 
             <div class="hoi2 py-5 px-5">
-                <h1>Update Product</h1>
+                <h1>Maak product aan</h1>
                 <p>Of ga terug naar het beginpagina <a href="index.php" class="link-primary">hier.</a> </p>
 
 
-
-
-                <form class="py-5 px-5 " method="POST" action="php/product-update-verwerk.php">
-                    <input type="hidden" name="id" value="<?php echo $user["id"] ?>">
+                <form class="py-5 px-5 " method="POST" action="php/register-verwerk.php">
                     <div class="form-group">
-                        <label for="exampleInputUser1">Naam</label>
-                        <input type="text" class="form-control" id="voornaam" name="name" aria-describedby="userHelp"
-                            value="<?php echo $user["name"] ?>">
+                        <label for="exampleInputUser1">Name</label>
+                        <input type="text" class="form-control" id="voornaam" name="voornaam"
+                            aria-describedby="userHelp" placeholder="Enter Username">
 
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputUser1">prijs per kg</label>
+                        <label for="exampleInputUser1">price per kg</label>
                         <input type="text" class="form-control" id="achternaam" name="priceperkg"
-                            aria-describedby="userHelp" value="<?php echo $user["price_per_kg"] ?>">
+                            aria-describedby="userHelp" placeholder="Enter Username">
 
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputUser1">smaak van de week?</label>
-                        <input type="text" class="form-control" id="achternaam" name="flavorotweek"
-                            aria-describedby="userHelp" value="<?php echo $user["is_flavor_ot_week"] ?>">
-
+                        <label for="exampleInputEmail1">flavor of the week?</label>
+                        <input type="email" class="form-control" id="email" name="flavoroftheweek"
+                            aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyon
+                            else.</small>
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputUser1">category</label>
-                        <input type="text" class="form-control" id="achternaam" name="category"
-                            aria-describedby="userHelp" value="<?php echo $user["category"] ?>">
-
+                        <label for="exampleInputEmail1">category</label>
+                        <input type="text" class="form-control" id="telefoonnummer" name="category"
+                            aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyon
+                            else.</small>
                     </div>
-
 
 
                     <div class="form-group py-5">
                         <!-- Submit button -->
                         <button class="btn btn-light" name="submit" type="submit">Submit</button>
                     </div>
-
-
 
 
 
@@ -109,6 +92,7 @@ if ($result = mysqli_query($conn, $sql)) {
             </div>
         </div>
     </div>
+
 
 
 </body>
