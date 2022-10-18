@@ -43,11 +43,11 @@ include 'php/database.php';
                 <p>Of ga terug naar het beginpagina <a href="index.php" class="link-primary">hier.</a> </p>
 
 
-                <form class="py-5 px-5 " method="POST" action="php/register-verwerk.php">
+                <form class="py-5 px-5 " method="POST" action="php/product-maak-verwerk.php">
                     <div class="form-group">
                         <label for="exampleInputUser1">Name</label>
-                        <input type="text" class="form-control" id="voornaam" name="voornaam"
-                            aria-describedby="userHelp" placeholder="Enter Username">
+                        <input type="text" class="form-control" id="voornaam" name="name" aria-describedby="userHelp"
+                            placeholder="Enter Username">
 
                     </div>
                     <div class="form-group">
@@ -58,7 +58,7 @@ include 'php/database.php';
                     </div>
                     <div class="form-group">
                         <label for="exampleInputEmail1">flavor of the week?</label>
-                        <input type="email" class="form-control" id="email" name="flavoroftheweek"
+                        <input type="text" class="form-control" id="email" name="flavoroftheweek"
                             aria-describedby="emailHelp" placeholder="Enter email">
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyon
                             else.</small>
