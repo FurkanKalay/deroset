@@ -3,13 +3,14 @@
 session_start();
 if (isset($_POST["submit"])) {
     $id = $_POST["id"];
+    
 
     if (
         !empty($_POST["name"])
         && !empty($_POST["priceperkg"])
         && !empty($_POST["flavorotweek"])
         && !empty($_POST["category"])
-
+     
     ) {
         //var_dump($_POST);
         //allemaal moeten ze true zijn
@@ -17,7 +18,8 @@ if (isset($_POST["submit"])) {
         $priceperkg = $_POST["priceperkg"];
         $flavorotweek = $_POST["flavorotweek"];
         $category = $_POST["category"];
-      
+        // var_dump($_POST);
+        // die;
 
         //database connectie
 

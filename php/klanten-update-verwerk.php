@@ -3,31 +3,34 @@
 session_start();
 if (isset($_POST["submit"])) {
     $id = $_POST["id"];
+    
 
     if (
-        !empty($_POST["voornaam"])     // ze moeten allemaal true zijn aka ze moeten niet leeg zijn
-        && !empty($_POST["achternaam"])
+        !empty($_POST["firstname"])     // ze moeten allemaal true zijn aka ze moeten niet leeg zijn
+        && !empty($_POST["lastname"])
         && !empty($_POST["email"])
-        && !empty($_POST["wachtwoord"])
-        && !empty($_POST["telefoonnummer"])
-        && !empty($_POST["date"])
+        && !empty($_POST["password"])
+        && !empty($_POST["phonenumber"])
+        && !empty($_POST["dateofbirth"])
         && !empty($_POST["adress"])
         && !empty($_POST["zipcode"])
         && !empty($_POST["city"])
+        
 
     ) {
         //var_dump($_POST);
         //allemaal moeten ze true zijn
-        $voornaam = $_POST["voornaam"]; // variabeles aan het zetten door post method te gebruiken
-        $achternaam = $_POST["achternaam"];
+        $voornaam = $_POST["firstname"]; // variabeles aan het zetten door post method te gebruiken
+        $achternaam = $_POST["lastname"];
         $email = trim($_POST["email"]);
-        $wachtwoord = $_POST["wachtwoord"];
-        $telefoonnummer = $_POST["telefoonnummer"];
-        $geboortedatum = $_POST["date"];
+        $wachtwoord = $_POST["password"];
+        $telefoonnummer = $_POST["phonenumber"];
+        $geboortedatum = $_POST["dateofbirth"];
         $adress = $_POST["adress"];
         $zipcode = $_POST["zipcode"];
         $city = $_POST["city"];
-       
+        // var_dump($_POST);
+        // die;
 
         //database connectie
 
@@ -53,7 +56,7 @@ if (isset($_POST["submit"])) {
         `phonenumber`='$telefoonnummer',
         `adress`='$adress',
         `zipcode`='$zipcode',
-        `city`='$city',
+        `city`='$city'
        
          WHERE id = '$id'";
 

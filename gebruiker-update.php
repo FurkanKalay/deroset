@@ -55,6 +55,8 @@ if ($result = mysqli_query($conn, $sql)) {
                 <h1>Update Account</h1>
                 <p>Of ga terug naar het beginpagina <a href="index.php" class="link-primary">hier.</a> </p>
                 <p>log uit <a href="php/loguit-verwerk.php" class="link-primary">hier.</a> </p>
+                <p>of verwijder je account hier <a href="php/klanten1-delete-verwerk.php?id=<?php echo $id ?>"
+                        class="link-primary">hier.</a> </p>
 
 
 
