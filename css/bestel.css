@@ -1,0 +1,18 @@
+.bestel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+}
+.front .bestel img {
+  height: 20%;
+}
+.front .bestel h1 {
+  margin: 1%;
+}
+.front .bestel button {
+  margin: 1%;
+  width: 25%;
+}

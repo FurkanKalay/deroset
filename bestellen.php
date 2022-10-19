@@ -38,19 +38,22 @@ if ($result = mysqli_query($conn, $sql)) {
 
         <div class="bestellen">
             <?php foreach ($melding as $mel) : ?>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="smaken/<?php echo $mel["picture"] ?>" alt="Avatar"
-                            style="width:100%;height:100%;border-radius:50%;">
-                    </div>
-                    <div class="flip-card-back">
-                        <p><?php echo $mel["name"] ?></p>
-                        <p>$<?php echo $mel["price_per_kg"] ?></p>
+            <a class="link" href="bestel.php?id=<?php echo $mel["id"] ?>">
+                <div class="flip-card">
 
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="smaken/<?php echo $mel["picture"] ?>" alt="Avatar"
+                                style="width:100%;height:100%;border-radius:50%;">
+                        </div>
+                        <div class="flip-card-back">
+                            <p><?php echo $mel["name"] ?></p>
+                            <p>$<?php echo $mel["price_per_kg"] ?></p>
+
+                        </div>
                     </div>
                 </div>
-            </div>
+            </a>
             <?php endforeach; ?>
 
         </div>

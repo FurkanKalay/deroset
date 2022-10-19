@@ -7,3 +7,4 @@
 <link rel="stylesheet" href="css/contact.css">
 <link rel="stylesheet" href="css/blog.css">
 <link rel="stylesheet" href="css/login.css">
+<link rel="stylesheet" href="css/bestel.css">
