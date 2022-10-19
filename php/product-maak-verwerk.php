@@ -6,6 +6,7 @@ if (isset($_POST["submit"])) { // als submit gevult is en niet staat aan NULL vo
         && !empty($_POST["priceperkg"])
         && !empty($_POST["flavoroftheweek"])
         && !empty($_POST["category"])
+        && !empty($_POST["plaatje"])
      
 
     ) {
@@ -14,6 +15,7 @@ if (isset($_POST["submit"])) { // als submit gevult is en niet staat aan NULL vo
         
         $flavoroftheweek = $_POST["flavoroftheweek"];
         $category = $_POST["category"];
+        $plaatje = $_POST["plaatje"];
         
 
 
@@ -23,8 +25,8 @@ if (isset($_POST["submit"])) { // als submit gevult is en niet staat aan NULL vo
         include 'database.php';
 
 
-        $sql = "INSERT INTO products (name, price_per_kg, is_flavor_ot_week, category)
-                VALUES ('$name', '$priceperkg','$flavoroftheweek', '$category')";
+        $sql = "INSERT INTO products (name, price_per_kg, is_flavor_ot_week, category, picture)
+                VALUES ('$name', '$priceperkg','$flavoroftheweek', '$category' ,'$plaatje' )";
 
         // Voer de INSERT INTO STATEMENT uit/ execute de query in het database
         mysqli_query($conn, $sql);

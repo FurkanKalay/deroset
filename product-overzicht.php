@@ -40,6 +40,7 @@ if ($result = mysqli_query($conn, $sql)) {
                 <th>price_per_kg</th>
                 <th>is_flavor_ot_week</th>
                 <th>category</th>
+                <th>picturename</th>
 
 
             </tr>
@@ -52,6 +53,7 @@ if ($result = mysqli_query($conn, $sql)) {
                 <td><?php echo $mel["price_per_kg"] ?></td>
                 <td><?php echo $mel["is_flavor_ot_week"] ?></td>
                 <td><?php echo $mel["category"] ?></td>
+                <td><?php echo $mel["picture"] ?></td>
 
 
                 <td><a href="product-update.php?id=<?php echo $mel["id"] ?>" class="btn btn-danger"><button

@@ -71,6 +71,13 @@ include 'php/database.php';
                             else.</small>
                     </div>
 
+                    <div class="form-group">
+                        <label for="exampleInputUser1">plaatje</label>
+                        <input type="text" class="form-control" id="achternaam" name="plaatje"
+                            aria-describedby="userHelp" placeholder="Enter Username">
+
+                    </div>
+
 
                     <div class="form-group py-5">
                         <!-- Submit button -->

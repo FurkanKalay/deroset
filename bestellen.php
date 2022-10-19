@@ -3,7 +3,11 @@
 
 include 'php/database.php';
 
+$sql = "SELECT * FROM products";
 
+if ($result = mysqli_query($conn, $sql)) {
+    $melding = mysqli_fetch_all($result, MYSQLI_ASSOC);
+}
 ?>
 
 
@@ -18,7 +22,7 @@ include 'php/database.php';
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-   
+
     <?php  // hallo met pc
         include 'php/links.php';
     ?>
@@ -31,16 +35,26 @@ include 'php/database.php';
 ?>
 
     <div class="front">
+
         <div class="bestellen">
-            <h2>Smaken</h2>
+            <?php foreach ($melding as $mel) : ?>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="smaken/<?php echo $mel["picture"] ?>" alt="Avatar"
+                            style="width:100%;height:100%;border-radius:50%;">
+                    </div>
+                    <div class="flip-card-back">
+                        <p><?php echo $mel["name"] ?></p>
+                        <p>$<?php echo $mel["price_per_kg"] ?></p>
 
-
-            <div class="smaken">
-                1
+                    </div>
+                </div>
             </div>
-
+            <?php endforeach; ?>
 
         </div>
+
     </div>
 
 
