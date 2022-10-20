@@ -12,7 +12,7 @@
         <li><a href="bestellen.php">Bestellen</a></li>
         <li><a href="blog.php">Blog</a></li>
         <li><a href="contact.php">Contact</a></li>
-        <li><a href="">Winkelmandje</a></li>
+        <li><a href="winkelmand.php">Winkelmandje</a></li>
         <li><a href="contact.php">Contact</a></li>
         <li><a href="product-overzicht.php">Producten</a></li>
         <li><a href="klanten-overzicht.php">Klanten</a></li>

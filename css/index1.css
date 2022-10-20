@@ -40,6 +40,7 @@ body {
     display: flex;
     flex-direction: column;
   }
+
   header {
     order: 99;
     word-break: break-all;

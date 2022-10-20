@@ -84,6 +84,12 @@ if ($result = mysqli_query($conn, $sql)) {
                             aria-describedby="userHelp" value="<?php echo $user["category"] ?>">
 
                     </div>
+                    <div class="form-group">
+                        <label for="exampleInputUser1">category</label>
+                        <input type="text" class="form-control" id="achternaam" name="picture"
+                            aria-describedby="userHelp" value="<?php echo $user["picture"] ?>">
+
+                    </div>
 
 
 

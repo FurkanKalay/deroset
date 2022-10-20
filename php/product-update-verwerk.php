@@ -10,6 +10,7 @@ if (isset($_POST["submit"])) {
         && !empty($_POST["priceperkg"])
         && !empty($_POST["flavorotweek"])
         && !empty($_POST["category"])
+        && !empty($_POST["picture"])
      
     ) {
         //var_dump($_POST);
@@ -18,6 +19,7 @@ if (isset($_POST["submit"])) {
         $priceperkg = $_POST["priceperkg"];
         $flavorotweek = $_POST["flavorotweek"];
         $category = $_POST["category"];
+        $picture = $_POST["picture"];
         // var_dump($_POST);
         // die;
 
@@ -40,7 +42,8 @@ if (isset($_POST["submit"])) {
         `name`='$name',
         `price_per_kg`='$priceperkg',
         `is_flavor_ot_week`='$flavorotweek',
-        `category`='$category'
+        `category`='$category',
+        `picture`='$picture'
        
          WHERE id = '$id'";
 
