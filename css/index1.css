@@ -32,7 +32,6 @@ body {
   background-color: white;
   border-radius: 5%;
   box-shadow: 5px 5px 8px rgb(132, 95, 167);
-  overflow: auto;
 }
 
 @media screen and (max-width: 800px) {
@@ -60,20 +59,26 @@ body {
     margin: 1%;
   }
   .bestellen .flip-card {
-    width: 33vw;
+    width: 20vw;
   }
   .flip-card .flip-card-inner {
     width: 30vw;
-    height: 15vh;
+    height: 10vh;
+  }
+  .front {
+    order: 5;
   }
   footer {
     display: none;
   }
+  .deroset {
+    order: 0;
+  }
   .smaakdag {
-    order: 50;
+    order: 1;
   }
   .smaakpop {
-    order: 75;
+    order: 2;
   }
 
   header,
@@ -89,13 +94,26 @@ body {
   .smaakdag .flip-card {
     display: flex;
     justify-content: center;
+    width: 20vw;
   }
-  .smaakpop .flip-card {
+  .smaakpop .combine .flip-card {
     display: flex;
     justify-content: center;
+    width: 20vw;
   }
   .smaakpop .combine {
     display: flex;
     flex-direction: row;
+    width: 20vw;
+    align-items: center;
+    justify-content: center;
+  }
+  .flip-card-back .button1 {
+    width: 4%;
+    font-size: smaller;
+    content: attr(data-labell);
+  }
+  .flip-card-back {
+    font-size: 15px;
   }
 }
