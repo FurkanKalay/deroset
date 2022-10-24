@@ -34,6 +34,8 @@ if ($result = mysqli_query($conn, $sql)) {
     <div class="table-container">
         <h1 class="heading">Klanten overzicht</h1>
         <a href="index.php" class="link-primary">home</a>
+        <a href="product-maak.php" class="btn btn-danger"><button class="button-11" role="button">voeg
+                product</button></a>
         <table class="table">
             <thead>
                 <tr>

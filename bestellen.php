@@ -25,13 +25,13 @@ if ($result = mysqli_query($conn, $sql)) {
 
     <?php  // hallo met pc
         include 'php/links.php';
-    ?>
+?>
 </head>
 
 <body>
 
     <?php  // hallo met pc
-        include 'navigatie.php';
+    include 'navigatie.php';
 ?>
 
     <div class="front">

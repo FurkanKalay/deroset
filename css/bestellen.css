@@ -11,13 +11,13 @@
 }
 .flip-card {
   background-color: transparent;
-  width: 12.5rem;
-  height: 12.5rem;
-
+  width: 10vw;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
-  margin: 0;
-
-  margin-top: 1vh;
+  margin-top: 2%;
+  align-items: center;
 }
 
 /* This container is needed to position the front and back side */

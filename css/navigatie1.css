@@ -68,26 +68,26 @@ li {
   justify-content: center;
 }
 
-.smaakpop .flip-card {
+.smaakpop .combine .flip-card {
   background-color: transparent;
-  width: 10rem;
-  height: 10rem;
-
+  width: 12vw;
+  height: 12vh;
+  display: flex;
+  justify-content: center;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
-  margin: 0;
-
-  margin-top: 1vh;
+  margin-top: 10%;
+  align-items: center;
 }
 
 .smaakdag .flip-card {
   background-color: transparent;
-  width: 10rem;
-  height: 10rem;
-
+  width: 12vw;
+  height: 12vh;
+  display: flex;
+  justify-content: center;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
-  margin: 0;
-
-  margin-top: 1vh;
+  margin-top: 2%;
+  align-items: center;
 }
 
 .smaakdag h4 {

@@ -83,5 +83,19 @@ body {
   .smaakpop,
   footer {
     width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    margin: 1%;
+  }
+
+  .smaakdag .flip-card {
+    display: flex;
+    justify-content: center;
+  }
+  .smaakpop .flip-card {
+    display: flex;
+    justify-content: center;
+  }
+  .smaakpop .combine {
+    display: flex;
+    flex-direction: row;
   }
 }

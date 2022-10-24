@@ -92,23 +92,28 @@ if (isset($_SESSION['rol'])) {
 
 <div class="smaakpop">
     <h4>Populaire smaken</h4>
-    <?php foreach ($melding2 as $mel2) : ?>
 
-    <div class="flip-card">
+    <div class="combine">
+        <?php foreach ($melding2 as $mel2) : ?>
+        <div class="flip-card">
 
-        <div class="flip-card-inner">
-            <div class="flip-card-front">
-                <img src="smaken/<?php echo $mel2["picture"] ?>" alt="Avatar"
-                    style="width:100%;height:100%;border-radius:50%;">
-            </div>
-            <div class="flip-card-back">
-                <p><?php echo $mel2["name"] ?></p>
-                <p>$<?php echo $mel2["price_per_kg"] ?></p>
-                <a href="php/addtocart.php?id=<?php echo $mel2["id"] ?>"><button>+ winkelwagen</button>
-                </a>
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="smaken/<?php echo $mel2["picture"] ?>" alt="Avatar"
+                        style="width:100%;height:100%;border-radius:50%;">
+                </div>
+                <div class="flip-card-back">
+                    <p><?php echo $mel2["name"] ?></p>
+                    <p>$<?php echo $mel2["price_per_kg"] ?></p>
+                    <a href="php/addtocart.php?id=<?php echo $mel2["id"] ?>"><button>+ winkelwagen</button>
+                    </a>
+                </div>
             </div>
         </div>
+        <?php endforeach; ?>
     </div>
 
-    <?php endforeach; ?>
+
+
+
 </div>
