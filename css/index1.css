@@ -60,6 +60,7 @@ body {
   }
   .bestellen .flip-card {
     width: 20vw;
+    margin-bottom: 1%;
   }
   .flip-card .flip-card-inner {
     width: 30vw;
