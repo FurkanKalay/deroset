@@ -25,8 +25,11 @@ include 'php/database.php';
 ?>
 
     <div class="front">
-        <div id="winkelmand" class="winkelmand">
 
+        <div id="winkelmand" class="winkelmand">
+            <div class="buttondelete" id="buttondelete" onclick="deleteProduct()">
+                delete all
+            </div>
         </div>
     </div>
 

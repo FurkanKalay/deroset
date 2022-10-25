@@ -1,4 +1,5 @@
 const ADD_NOTITIE = document.getElementById("addbutton");
+const VERWIJDER_BUTTON = document.getElementById("buttondelete");
 const WINKELMAND = document.getElementById("winkelmand");
 var productPrijs = document.getElementById("productprijs");
 var productNaam = document.getElementById("productnaam");
@@ -32,3 +33,13 @@ function haalCart() {
 }
 
 haalCart();
+
+function deleteProduct() {
+  localStorage.removeItem("cart");
+
+  if (!localStorage.getItem("cart")) {
+    localStorage.setItem("cart", "[]"); // [] is de standaard waarde omdat als een array moet functioneren.
+  }
+
+  window.location.reload();
+}
