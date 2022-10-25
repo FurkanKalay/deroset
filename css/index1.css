@@ -117,4 +117,16 @@ body {
   .flip-card-back {
     font-size: 15px;
   }
+  .addbutton {
+    width: 100px;
+  }
+  .parafoto {
+    display: flex;
+    flex-direction: column !important;
+    margin: 1%;
+  }
+  .parafoto p {
+    margin-bottom: 5%;
+    margin-left: 0;
+  }
 }

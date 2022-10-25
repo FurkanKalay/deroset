@@ -11,8 +11,8 @@
 }
 .flip-card {
   background-color: transparent;
-  width: 10vw;
-  height: 10vh;
+  width: 9vw;
+  height: 9vh;
   display: flex;
   justify-content: center;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
@@ -68,3 +68,18 @@
 /* .bestellen .link {
   width: 10vw;
 } */
+.addbutton {
+  width: 25px;
+  text-decoration: none;
+  line-height: 35px;
+  display: inline-block;
+  background-color: plum;
+  font-weight: medium;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  font-size: 14px;
+  opacity: 1;
+}

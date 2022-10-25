@@ -47,11 +47,9 @@ if ($result = mysqli_query($conn, $sql)) {
                             style="width:100%;height:100%;border-radius:50%;">
                     </div>
                     <div class="flip-card-back">
-                        <p><?php echo $mel["name"] ?></p>
-                        <p>$<?php echo $mel["price_per_kg"] ?></p>
-                        <a href="php/addtocart.php?id=<?php echo $mel["id"] ?>"><button class="button1"
-                                data-labell="+">+
-                                winkelwagen</button>
+                        <p id="productnaam"><?php echo $mel["name"] ?></p>
+                        <p id="productprijs">$<?php echo $mel["price_per_kg"] ?></p>
+                        <a href="php/addtocart.php?id=<?php echo $mel["id"] ?>" class="addbutton" id="addbutton">add
                         </a>
                     </div>
                 </div>

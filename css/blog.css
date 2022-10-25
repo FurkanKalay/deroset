@@ -14,19 +14,22 @@
   margin: 2%;
 }
 .een h3 {
-  font-size: 2vw;
+  font-size: x-large;
+}
+.twee h3 {
+  font-size: x-large;
 }
 .blog .een .parafoto {
   display: flex;
   flex-direction: row;
 }
 .parafoto p {
-  font-size: 1vw;
+  font-size: 25px;
   margin-right: 3%;
 }
 .blog .een .parafoto img {
-  width: 20rem;
-  height: 15rem;
+  max-width: 300px;
+  max-height: 150px;
 }
 
 .blog .twee {
@@ -43,7 +46,6 @@
 }
 
 .blog .twee .parafoto img {
-  width: 20%;
-  height: 20%;
-  object-fit: scale-down;
+  max-width: 300px;
+  max-height: 150px;
 }

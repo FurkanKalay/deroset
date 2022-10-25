@@ -80,7 +80,7 @@ if (isset($_SESSION['rol'])) {
             <div class="flip-card-back">
                 <p><?php echo $mel3["name"] ?></p>
                 <p>$<?php echo $mel3["price_per_kg"] ?></p>
-                <a href="php/addtocart.php?id=<?php echo $mel3["id"] ?>"><button>+ winkelwagen</button>
+                <a href="php/addtocart.php?id=<?php echo $mel3["id"] ?>" class="addbutton">add
                 </a>
             </div>
         </div>
@@ -105,7 +105,7 @@ if (isset($_SESSION['rol'])) {
                 <div class="flip-card-back">
                     <p><?php echo $mel2["name"] ?></p>
                     <p>$<?php echo $mel2["price_per_kg"] ?></p>
-                    <a href="php/addtocart.php?id=<?php echo $mel2["id"] ?>"><button>+ winkelwagen</button>
+                    <a href="php/addtocart.php?id=<?php echo $mel2["id"] ?>" class="addbutton">add
                     </a>
                 </div>
             </div>
