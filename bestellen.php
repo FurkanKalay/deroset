@@ -49,7 +49,7 @@ if ($result = mysqli_query($conn, $sql)) {
                     <div class="flip-card-back">
                         <p id="productnaam"><?php echo $mel["name"] ?></p>
                         <p id="productprijs">$<?php echo $mel["price_per_kg"] ?></p>
-                        <a href="php/addtocart.php?id=<?php echo $mel["id"] ?>" class="addbutton" id="addbutton">add
+                        <a href="#" class="addbutton" id="addbutton" onclick="addProduct()">add
                         </a>
                     </div>
                 </div>
