@@ -26,14 +26,13 @@ include 'php/database.php';
 
     <div class="front">
         <div class="winkelmanden">
-
-            <div id="winkelmand" class="winkelmand">
-                <div class="buttondelete" id="buttondelete" onclick="deleteProduct()">
-                    delete all
-                </div>
+            <div class="buttondelete" id="buttondelete" onclick="deleteProduct()">
+                delete all
+            </div>
+            <div type="text" id="winkelmand" class="winkelmand">
             </div>
             <form>
-                <label for="fname">Naam</label>
+                <!-- <label for="fname">Naam</label>
                 <input type="text" id="fname" name="fname" value="John">
                 <label for="lname">Adres</label>
                 <input type="text" id="lname" name="lname" value="Doe">
@@ -44,24 +43,30 @@ include 'php/database.php';
                 <input type="text" id="lname" name="lname" value="Doe">
 
                 <label for="lname">Telefoonnummer </label>
-                <input type="text" id="lname" name="lname" value="Doe">
+                <input type="text" id="lname" name="lname" value="Doe"> -->
 
 
 
 
 
                 <div class="bezorgenophalen">
-                      <input type="radio" id="css" name="fav_language" value="CSS">
+                      <input type="radio" id="css" name="bezorgen" value="bezorgen">
                       <label for="css">Bezorgen</label>
                 </div>
                 <div class="bezorgenophalen">
-                      <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                      <input type="radio" id="javascript" name="ophalen" value="ophalen">
                       <label for="javascript">Ophalen</label>
+                </div>
+
+                <div class="form-group">
+                    <!-- Date input -->
+                    <label class="control-label" for="date">Date</label>
+                    <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="date" />
                 </div>
 
 
 
-                <button class="btn btn-light" name="submit" type="submit">Submit</button>
+                <button class="btn btn-light" name="submit" type="submit" onclick="deleteProduct()">Submit</button>
             </form>
 
 
