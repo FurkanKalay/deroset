@@ -16,7 +16,10 @@ if (isset($_POST["submit"])) { // als submit gevult is en niet staat aan NULL vo
         session_start();
         $voornaam = $_POST["voornaam"]; // variabeles aan het zetten door post method te gebruiken
         $id = $_SESSION['id'];
+        $date = $_POST["date"];
+        $method = $_POST["method"];
 
+        $recieved = "no";
 
 
 
@@ -24,14 +27,14 @@ if (isset($_POST["submit"])) { // als submit gevult is en niet staat aan NULL vo
         include 'database.php';
 
 
-        $sql = "INSERT INTO orders (user_id, product_id, pickup, delivery, isRecieved)
-                VALUES ('$id', '$achternaam','$email', '$wachtwoord', '$geboortedatum', '$telefoonnummer','$adress','$zipcode','$city','$rol')";
+        $sql = "INSERT INTO orders (user_id, product_id, date, ordermethod, isRecieved)
+                VALUES ('$id', '$achternaam','$date', '$method', '$recieved')";
 
         // Voer de INSERT INTO STATEMENT uit/ execute de query in het database
         mysqli_query($conn, $sql);
 
         echo "Inserted successfully";
         mysqli_close($conn); // Sluit de database verbinding want er hoeven geen queries meer uitgevoerd te worden
-        header("location: http://localhost/deroset/login.php");
+        header("location: http://localhost/deroset/bestellen.php");
     }
 }

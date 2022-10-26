@@ -31,7 +31,7 @@ include 'php/database.php';
             </div>
             <div type="text" id="winkelmand" class="winkelmand">
             </div>
-            <form>
+            <form method="POST" action="php/bestelling-verwerk.php">
                 <!-- <label for="fname">Naam</label>
                 <input type="text" id="fname" name="fname" value="John">
                 <label for="lname">Adres</label>
@@ -50,11 +50,11 @@ include 'php/database.php';
 
 
                 <div class="bezorgenophalen">
-                      <input type="radio" id="css" name="bezorgen" value="bezorgen">
+                      <input type="radio" id="css" name="method" value="bezorgen">
                       <label for="css">Bezorgen</label>
                 </div>
                 <div class="bezorgenophalen">
-                      <input type="radio" id="javascript" name="ophalen" value="ophalen">
+                      <input type="radio" id="javascript" name="method" value="ophalen">
                       <label for="javascript">Ophalen</label>
                 </div>
 
