@@ -1,2 +1,23 @@
-.winkelwagen {
+.winkelmanden .winkelmand {
+  border-color: plum;
+  border-style: solid;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.bezorgenophalen {
+  display: flex;
+  flex-direction: row;
+}
+.buttondelete {
+  margin: 1%;
+}
+.winkelmand {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
