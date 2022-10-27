@@ -15,6 +15,7 @@
         <li><a href="winkelmand.php">Winkelmandje</a></li>
         <li><a href="contact.php">Contact</a></li>
         <li><a href="product-overzicht.php">Producten</a></li>
+        <li><a href="bestellingen-overzicht.php">Bestellingen</a></li>
         <li><a href="klanten-overzicht.php">Klanten</a></li>
 
         <li><a href="gebruiker-update.php" i class="fa-regular fa-user"></i></a>
