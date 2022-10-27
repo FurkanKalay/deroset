@@ -50,7 +50,7 @@ if ($result = mysqli_query($conn, $sql)) {
                         <p id="productnaam"><?php echo $mel["name"] ?></p>
                         <p id="productprijs">$<?php echo $mel["price_per_kg"] ?></p>
                         <a href="#" class="addbutton" id="addbutton"
-                            onclick="addProduct('<?php echo $mel['name'] ?>', '$<?php echo $mel['price_per_kg'] ?>')">add
+                            onclick="addProduct('<?php echo $mel['name'] ?>', '$<?php echo $mel['price_per_kg'] ?>', '<?php echo $mel['id'] ?>')">add
                         </a>
                     </div>
                 </div>

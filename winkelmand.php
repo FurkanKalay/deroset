@@ -29,9 +29,12 @@ include 'php/database.php';
             <div class="buttondelete" id="buttondelete" onclick="deleteProduct()">
                 delete all
             </div>
-            <div type="text" id="winkelmand" class="winkelmand">
+
+            <div id="winkelmand" class="winkelmand">
             </div>
             <form method="POST" action="php/bestelling-verwerk.php">
+
+
                 <!-- <label for="fname">Naam</label>
                 <input type="text" id="fname" name="fname" value="John">
                 <label for="lname">Adres</label>

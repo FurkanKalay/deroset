@@ -8,10 +8,11 @@ if (!localStorage.getItem("cart")) {
   localStorage.setItem("cart", "[]"); // [] is de standaard waarde omdat als een array moet functioneren.
 }
 
-function addProduct(smaak, prijs) {
+function addProduct(smaak, prijs, id) {
   let notitie = {
     naam: smaak,
     prijs: prijs,
+    id: id,
   };
 
   // Pak de huidige notitie object en zet om in leesbaar JSON formaat.
@@ -28,7 +29,17 @@ function haalCart() {
   let cart = JSON.parse(localStorage.getItem("cart"));
 
   for (let i = 0; i < cart.length; i++) {
-    WINKELMAND.innerHTML += "<p>" + cart[i].naam + " " + cart[i].prijs + "</p>";
+    WINKELMAND.innerHTML +=
+      "<form action='php/bestelling-verwerk' method='POST'>" +
+      "<p>" +
+      cart[i].naam +
+      " " +
+      cart[i].prijs +
+      "</p>" +
+      "<input type='text' name='idvanproduct' value=" +
+      cart[i].id +
+      ">" +
+      "</form>";
   }
 }
 

@@ -14,11 +14,11 @@ if (isset($_POST["submit"])) { // als submit gevult is en niet staat aan NULL vo
 
     ) {
         session_start();
-        $voornaam = $_POST["voornaam"]; // variabeles aan het zetten door post method te gebruiken
-        $id = $_SESSION['id'];
+        // variabeles aan het zetten door post method te gebruiken
+        $id = $_SESSION['gebruiker_id'];
         $date = $_POST["date"];
         $method = $_POST["method"];
-
+        $productid = $_POST["idvanproduct"];
         $recieved = "no";
 
 
@@ -28,7 +28,7 @@ if (isset($_POST["submit"])) { // als submit gevult is en niet staat aan NULL vo
 
 
         $sql = "INSERT INTO orders (user_id, product_id, date, ordermethod, isRecieved)
-                VALUES ('$id', '$achternaam','$date', '$method', '$recieved')";
+                VALUES ('$id', '$productid','$date', '$method', '$recieved')";
 
         // Voer de INSERT INTO STATEMENT uit/ execute de query in het database
         mysqli_query($conn, $sql);
