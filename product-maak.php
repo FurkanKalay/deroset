@@ -78,6 +78,13 @@ include 'php/database.php';
 
                     </div>
 
+                    <div class="form-group">
+                        <label for="exampleInputUser1">description</label>
+                        <input type="text" class="form-control" id="achternaam" name="description"
+                            aria-describedby="userHelp" placeholder="Enter Username">
+
+                    </div>
+
 
                     <div class="form-group py-5">
                         <!-- Submit button -->

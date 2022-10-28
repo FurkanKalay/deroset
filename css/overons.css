@@ -17,17 +17,38 @@
   margin: 4%;
 }
 .een p {
-  font-size: 1rem;
+  font-size: 25px;
+}
+.twee p {
+  font-size: 25px;
 }
 
 .eenplaatje {
-  width: 15rem;
-  height: 15rem;
+  max-width: 300px;
+  max-height: 150px;
   margin-left: 10%;
 }
 
 .tweeplaatje {
-  width: 15rem;
-  height: 15rem;
+  max-width: 300px;
+  max-height: 150px;
   margin-right: 10%;
+}
+
+@media screen and (max-width: 1025px) {
+  .bijelkaar {
+    display: flex;
+    flex-direction: column;
+  }
+  .eenplaatje {
+    margin-left: 0;
+    margin: 5%;
+  }
+  .tweeplaatje {
+    margin-right: 0;
+    margin: 5%;
+  }
+  h2 {
+    margin: 1%;
+  }
 }

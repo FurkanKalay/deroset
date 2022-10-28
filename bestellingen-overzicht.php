@@ -12,7 +12,7 @@ $sql = "SELECT orders.id as 'orders_id', firstname, name, date, ordermethod, isR
     JOIN products on products.id = orders.product_id";
 
 if ($result = mysqli_query($conn, $sql)) {
-    $melding = mysqli_fetch_all($result, MYSQLI_ASSOC);
+    $melding1 = mysqli_fetch_all($result, MYSQLI_ASSOC);
 }
 
 
@@ -36,8 +36,7 @@ if ($result = mysqli_query($conn, $sql)) {
     <div class="table-container">
         <h1 class="heading">Bestellingen overzicht</h1>
         <a href="index.php" class="link-primary">home</a>
-        <a href="product-maak.php" class="btn btn-danger"><button class="button-11" role="button">voeg
-                product</button></a>
+
         <table class="table">
             <thead>
                 <tr>
@@ -47,24 +46,27 @@ if ($result = mysqli_query($conn, $sql)) {
                     <th>date</th>
                     <th>ordermethod</th>
                     <th>isRecieved</th>
+                    <th>update</th>
+                    <th>delete</th>
 
                 </tr>
             </thead>
             <tbody>
-                <?php foreach ($melding as $mel) : ?>
+                <?php foreach ($melding1 as $mel5) : ?>
                 <tr>
-                    <td data-label="id"><?php echo $mel["orders_id"] ?></td>
-                    <td data-label="name"><?php echo $mel["firstname"] ?></td>
-                    <td data-label="name"><?php echo $mel["name"] ?></td>
-                    <td data-label="date"><?php echo $mel["date"] ?></td>
-                    <td data-label="ordermethod"><?php echo $mel["ordermethod"] ?></td>
+                    <td data-label="id"><?php echo $mel5["orders_id"] ?></td>
+                    <td data-label="name"><?php echo $mel5["firstname"] ?></td>
+                    <td data-label="name"><?php echo $mel5["name"] ?></td>
+                    <td data-label="date"><?php echo $mel5["date"] ?></td>
+                    <td data-label="ordermethod"><?php echo $mel5["ordermethod"] ?></td>
 
-                    <td data-label="recieved"><?php echo $mel["isRecieved"] ?></td>
+                    <td data-label="recieved"><?php echo $mel5["isRecieved"] ?></td>
 
-                    <td data-label="update"><a href="product-update.php?id=<?php echo $mel["id"] ?>"
+                    <td data-label="update"><a href="bestellingen-update.php?id=<?php echo $mel5["orders_id"] ?>"
                             class="btn">update</a></td>
 
-                    <td data-label="verwijder"><a href="php/product-delete-verwerk.php?id=<?php echo $mel["id"] ?>"
+                    <td data-label="verwijder"><a
+                            href="php/product-delete-verwerk.php?id=<?php echo $mel5["orders_id"] ?>"
                             class="btn">verwijder</a>
                     </td>
                 </tr>

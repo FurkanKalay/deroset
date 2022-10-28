@@ -20,13 +20,13 @@ include 'php/database.php';
 
     <?php  // hallo met pc
         include 'php/links.php';
-    ?>
+?>
 </head>
 
 <body>
 
     <?php  // hallo met pc
-        include 'navigatie.php';
+    include 'navigatie.php';
 ?>
 
     <div class="front">
@@ -44,27 +44,8 @@ include 'php/database.php';
                         magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                         ex
                         ea
-                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-                        eu
-                        fugiat
-                        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                        deserunt
-                        mollit
-                        anim id est laborum commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                        esse cillum dolore
-                        eu
-                        fugiat
-                        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                        deserunt
-                        mollit
-                        anim id est laborum commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                        esse cillum dolore
-                        eu
-                        fugiat
-                        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                        deserunt
-                        mollit
-                        anim id est laborum
+
+
                     </p>
                 </div>
                 <img class="eenplaatje" src="assets/rozecake.jpeg" alt="" srcset="">
@@ -78,26 +59,8 @@ include 'php/database.php';
                     magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                     ex
                     ea
-                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-                    eu
-                    fugiat
-                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt
-                    mollit
-                    anim id est laborum Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut
-                    labore et
-                    dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex
-                    ea
-                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-                    eu
-                    fugiat
-                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt
-                    mollit
-                    anim id est laborum</p>
+
+                </p>
             </div>
             <div class="bijelkaar">
                 <img class="tweeplaatje" src="assets/redvelvet.jpg" alt="" srcset="">
@@ -107,43 +70,9 @@ include 'php/database.php';
                         ut labore et
                         dolore
                         magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                        ex
-                        ea
-                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-                        eu
-                        fugiat
-                        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                        deserunt
-                        mollit
-                        anim id est laborum commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                        esse cillum dolore
-                        eu
-                        fugiat
-                        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                        deserunt
-                        mollit
-                        anim id est laborum Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor
-                        incididunt
-                        ut labore et
-                        dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                        ex
-                        ea
-                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-                        eu
-                        fugiat
-                        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                        deserunt
-                        mollit
-                        anim id est laborum commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                        esse cillum dolore
-                        eu
-                        fugiat
-                        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                        deserunt
-                        mollit
-                        anim id est laborum</p>
+
+
+                    </p>
                 </div>
             </div>
         </div>

@@ -6,20 +6,18 @@ if (isset($_POST["submit"])) {
 
 
     if (
-        !empty($_POST["name"])
-        && !empty($_POST["priceperkg"])
-        && !empty($_POST["flavorotweek"])
-        && !empty($_POST["category"])
-        && !empty($_POST["picture"])
+        !empty($_POST["date"])
+        && !empty($_POST["ordermethod"])
+        && !empty($_POST["isrecieved"])
+
 
     ) {
         //var_dump($_POST);
         //allemaal moeten ze true zijn
-        $name = $_POST["name"];
-        $priceperkg = $_POST["priceperkg"];
-        $flavorotweek = $_POST["flavorotweek"];
-        $category = $_POST["category"];
-        $picture = $_POST["picture"];
+        $date = $_POST["date"];
+        $ordermethod = $_POST["ordermethod"];
+        $isrecieved = $_POST["isrecieved"];
+
         // var_dump($_POST);
         // die;
 
@@ -38,12 +36,11 @@ if (isset($_POST["submit"])) {
         //  city = '$city',
         //   WHERE id = '$id' ";
 
-        $sql = "UPDATE `products` SET 
-        `name`='$name',
-        `price_per_kg`='$priceperkg',
-        `is_flavor_ot_week`='$flavorotweek',
-        `category`='$category',
-        `picture`='$picture'
+        $sql = "UPDATE `orders` SET 
+        `date`='$date',
+        `ordermethod`='$ordermethod',
+        `isRecieved`='$isrecieved'
+    
        
          WHERE id = '$id'";
 
@@ -53,12 +50,12 @@ if (isset($_POST["submit"])) {
         // die;
 
         if (mysqli_query($conn, $sql)) {
-            header("location: http://localhost/deroset/product-overzicht.php");
+            header("location: http://localhost/deroset/bestellingen-overzicht.php");
         }
 
         //echo "Inserted successfully";
         mysqli_close($conn); // Sluit de database verbinding
     } else {
-        header("location: http://localhost/deroset/product-update.php?id=$id");
+        header("location: http://localhost/deroset/bestellingen-update.php?id=$id");
     }
 }

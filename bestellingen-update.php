@@ -52,32 +52,42 @@ if ($result = mysqli_query($conn, $sql)) {
         <div class="hoi1 ">
 
             <div class="hoi2 py-5 px-5">
-                <h1>Update Account</h1>
+                <h1>Update Bestellingen</h1>
                 <p>Of ga terug naar het beginpagina <a href="index.php" class="link-primary">hier.</a> </p>
-                <p>log uit <a href="php/loguit-verwerk.php" class="link-primary">hier.</a> </p>
-                <p>of verwijder je account hier <a href="php/klanten1-delete-verwerk.php?id=<?php echo $id ?>"
-                        class="link-primary">hier.</a> </p>
 
 
 
-                <form class="py-5 px-5 " method="POST" action="php/gebruiker-update-verwerk.php">
+
+                <form class="py-5 px-5 " method="POST" action="php/bestellingen-update-verwerk.php">
                     <input type="hidden" name="id" value="<?php echo $user["id"] ?>">
                     <div class="form-group">
-                        <label for="exampleInputUser1">Naam</label>
+                        <label for="exampleInputUser1">datum</label>
                         <input type="text" class="form-control" id="voornaam" name="date" aria-describedby="userHelp"
                             value="<?php echo $user["date"] ?>">
 
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputUser1">Achternaam</label>
+                        <label for="exampleInputUser1">ordermethod</label>
                         <input type="text" class="form-control" id="achternaam" name="ordermethod"
                             aria-describedby="userHelp" value="<?php echo $user["ordermethod"] ?>">
 
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputUser1">adress</label>
-                        <input type="text" class="form-control" id="voornaam" name="isrecieved"
-                            aria-describedby="userHelp" value="<?php echo $user["isRecieved"] ?>">
+                        <label for="exampleInputUser1">is it recieved?</label>
+                        <!-- <input type="text" class="form-control" id="voornaam" name="isrecieved"
+                            aria-describedby="userHelp" value=""> -->
+                        <select class=" form-control" name="isrecieved" aria-label="Default select example">
+
+                            <!-- <option selected></option> -->
+
+                            <option value="no">no</option>
+                            <option value="yes">yes</option>
+
+
+
+
+
+                        </select>
 
                     </div>
 

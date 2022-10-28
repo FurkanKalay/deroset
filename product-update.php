@@ -85,9 +85,15 @@ if ($result = mysqli_query($conn, $sql)) {
 
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputUser1">category</label>
+                        <label for="exampleInputUser1">picture</label>
                         <input type="text" class="form-control" id="achternaam" name="picture"
                             aria-describedby="userHelp" value="<?php echo $user["picture"] ?>">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputUser1">description</label>
+                        <input type="text" class="form-control" id="achternaam" name="description"
+                            aria-describedby="userHelp" value="<?php echo $user["description"] ?>">
 
                     </div>
 

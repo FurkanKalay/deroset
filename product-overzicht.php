@@ -32,7 +32,7 @@ if ($result = mysqli_query($conn, $sql)) {
 
 <body>
     <div class="table-container">
-        <h1 class="heading">Klanten overzicht</h1>
+        <h1 class="heading">Product overzicht</h1>
         <a href="index.php" class="link-primary">home</a>
         <a href="product-maak.php" class="btn btn-danger"><button class="button-11" role="button">voeg
                 product</button></a>
@@ -45,6 +45,7 @@ if ($result = mysqli_query($conn, $sql)) {
                     <th>is_flavor_ot_week</th>
                     <th>category</th>
                     <th>picturename</th>
+                    <th>description</th>
                     <th>update</th>
                     <th>verwijder</th>
                 </tr>
@@ -59,6 +60,8 @@ if ($result = mysqli_query($conn, $sql)) {
                     <td data-label="category"><?php echo $mel["category"] ?></td>
 
                     <td data-label="picturename"><?php echo $mel["picture"] ?></td>
+
+                    <td data-label="description"><?php echo $mel["description"] ?></td>
 
                     <td data-label="update"><a href="product-update.php?id=<?php echo $mel["id"] ?>"
                             class="btn">update</a></td>

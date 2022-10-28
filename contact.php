@@ -14,44 +14,40 @@ include 'php/database.php';
 
     <?php  // hallo met pc
         include 'php/links.php';
-    ?>
+?>
 
 </head>
 
 <body>
 
     <?php  // hallo met pc
-        include 'navigatie.php';
-    ?>
+    include 'navigatie.php';
+?>
 
     <div class="front">
         <div class="contact">
             <h2>Contact</h2>
 
 
+            <div class="bijelkaar2">
+                <div class="een1">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt
+                        ut
+                        labore et
+                        dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex
+                        ea
 
-            <div class="een">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt
-                    ut
-                    labore et
-                    dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex
-                    ea
-                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-                    eu
-                    fugiat
-                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt
-                    mollit
-                    anim id est laborum
-                </p>
+                    </p>
+                </div>
+                <img class="eenplaatje1" src="assets/icecream.jpg" alt="" srcset="">
             </div>
-            <img class="eenplaatje" src="assets/icecream.jpg" alt="" srcset="">
 
 
-            <img class="tweeplaatje" src="assets/icebanner.jpg" alt="" srcset="">
+
+            <img class="tweeplaatje2" src="assets/icebanner.jpg" alt="" srcset="">
 
 
 
@@ -64,8 +60,8 @@ include 'php/database.php';
 
 
     <?php
-        require 'footer.php';
-    ?>
+    require 'footer.php';
+?>
 </body>
 
 </html>
