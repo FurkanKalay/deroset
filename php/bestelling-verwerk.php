@@ -20,6 +20,14 @@ if (isset($_POST["submit"])) { // als submit gevult is en niet staat aan NULL vo
         $method = $_POST["method"];
         $productid = $_POST["idvanproduct"];
         $recieved = "no";
+        $name = $_POST["name"];
+        $adress = $_POST["adress"];
+        $zipcode = $_POST["zipcode"];
+        $city = $_POST["city"];
+        $phonenumber = $_POST["phonenumber"];
+    
+
+
 
 
 
@@ -27,8 +35,8 @@ if (isset($_POST["submit"])) { // als submit gevult is en niet staat aan NULL vo
         include 'database.php';
 
 
-        $sql = "INSERT INTO orders (user_id, product_id, date, ordermethod, isRecieved)
-                VALUES ('$id', '$productid','$date', '$method', '$recieved')";
+        $sql = "INSERT INTO orders (user_id, product_id, date, ordermethod, isRecieved, name, adress, zipcode, city, phonenumber)
+                VALUES ('$id', '$productid','$date', '$method', '$recieved','$name', '$adress','$zipcode', '$city', '$phonenumber')";
 
         // Voer de INSERT INTO STATEMENT uit/ execute de query in het database
         mysqli_query($conn, $sql);

@@ -9,6 +9,7 @@ $mysqli = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
 
 // Maak een  database connectie
 $conn = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
+session_start();
 
 // // Controleer de verbinding
 // if (mysqli_connect_error()) {

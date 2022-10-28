@@ -27,7 +27,7 @@ if ($result2 = mysqli_query($conn, $sql3)) {
 </div>
 
 
-<?php session_start();
+<?php 
 
 // die('hoi');
 if (isset($_SESSION['rol'])) {
