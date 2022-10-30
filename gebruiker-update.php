@@ -60,7 +60,7 @@ if ($result = mysqli_query($conn, $sql)) {
 
 
 
-                <form class="py-5 px-5 " method="POST" action="php/gebruiker-update-verwerk.php">
+                <form class=" " method="POST" action="php/gebruiker-update-verwerk.php">
                     <input type="hidden" name="id" value="<?php echo $user["id"] ?>">
                     <div class="form-group">
                         <label for="exampleInputUser1">Naam</label>

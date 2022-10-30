@@ -39,6 +39,10 @@ form {
 
   border-radius: 10%;
 }
+.winkelmand .buttondelete {
+  margin-bottom: 10%;
+  margin-top: 10%;
+}
 .winkelmanden form label {
   margin: 2px;
 }
@@ -93,5 +97,11 @@ form .form-group {
   }
   .submitwinkelwagen {
     margin: 5%;
+  }
+  form .form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }

@@ -59,7 +59,7 @@ body {
   font-size: 14px;
   opacity: 1;
 }
-@media (max-width: 768px) {
+@media (max-width: 1025px) {
   .table thead {
     display: none;
   }
