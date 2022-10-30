@@ -36,11 +36,7 @@ function haalCart() {
       cart[i].naam +
       " " +
       cart[i].prijs +
-      "</p>" +
-      "<input type='text' name='idvanproduct' value=" +
-      cart[i].id +
-      ">" +
-      "</form>";
+      "</p> <br>";
   }
 }
 

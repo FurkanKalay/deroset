@@ -7,7 +7,7 @@ include 'php/database.php';
 
 
 
-$sql = "SELECT orders.id as 'orders_id', user_id, name, date, ordermethod, isRecieved, name, adress, zipcode, city, phonenumber FROM orders
+$sql = "SELECT orders.id as 'orders_id', user_id, name, date, ordermethod, isRecieved, username, adress, zipcode, city, phonenumber FROM orders
    
     JOIN products on products.id = orders.product_id";
 
@@ -41,18 +41,19 @@ if ($result = mysqli_query($conn, $sql)) {
             <thead>
                 <tr>
                     <th>id</th>
-                    <th>username </th>
+                    <th>userid </th>
                     <th>productname</th>
                     <th>date</th>
                     <th>ordermethod</th>
                     <th>isRecieved</th>
-                    <th>update</th>
-                    <th>delete</th>
                     <th>accountname</th>
                     <th>adress</th>
                     <th>zipcode</th>
                     <th>city</th>
                     <th>phonenumber</th>
+                    <th>update</th>
+                    <th>delete</th>
+
 
                 </tr>
             </thead>
@@ -67,7 +68,7 @@ if ($result = mysqli_query($conn, $sql)) {
 
                     <td data-label="recieved"><?php echo $mel5["isRecieved"] ?></td>
 
-                    <td data-label="username"><?php echo $mel5["name"] ?></td>
+                    <td data-label="username"><?php echo $mel5["username"] ?></td>
                     <td data-label="adress"><?php echo $mel5["adress"] ?></td>
                     <td data-label="zipcode"><?php echo $mel5["zipcode"] ?></td>
                     <td data-label="city"><?php echo $mel5["city"] ?></td>
@@ -77,7 +78,7 @@ if ($result = mysqli_query($conn, $sql)) {
                             class="btn">update</a></td>
 
                     <td data-label="verwijder"><a
-                            href="php/product-delete-verwerk.php?id=<?php echo $mel5["orders_id"] ?>"
+                            href="php/bestellingen-delete-verwerk.php?id=<?php echo $mel5["orders_id"] ?>"
                             class="btn">verwijder</a>
                     </td>
                 </tr>

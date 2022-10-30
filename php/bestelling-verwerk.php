@@ -33,7 +33,7 @@ if (isset($_POST["submit"])) { // als submit gevult is en niet staat aan NULL vo
 
         foreach ($product as $prod) : 
 
-            $sql = "INSERT INTO orders (user_id, product_id, date, ordermethod, isRecieved, name, adress, zipcode, city, phonenumber)
+            $sql = "INSERT INTO orders (user_id, product_id, date, ordermethod, isRecieved, username, adress, zipcode, city, phonenumber)
             VALUES ('$id', '$prod','$date', '$method', '$recieved','$name', '$adress','$zipcode', '$city', '$phonenumber')";
 
             // Voer de INSERT INTO STATEMENT uit/ execute de query in het database
