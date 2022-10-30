@@ -1,8 +1,8 @@
 <?php
-session_start();
+require 'database.php';
 print_r($_GET["id"]);
 
-require 'database.php';
+
 
 $id = $_GET['id'];
 

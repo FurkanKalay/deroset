@@ -1,7 +1,7 @@
 <?php  // hallo met pc
 
 
-include 'php/database.php';
+
 
 $sql4 = "SELECT * FROM products WHERE is_flavor_ot_week = '3' LIMIT 3";
 

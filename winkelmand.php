@@ -45,44 +45,66 @@ if ($result = mysqli_query($conn, $sql)) {
                     </div>
                 </div>
                 <form method="POST" action="php/bestelling-verwerk.php">
+                    <div class="allesinform">
+
+                        <div class="bezorgen">
+                            <div class="bezorgenophalen">
+                                <input type="radio" id="css" name="method" value="bezorgen">
+                                  <label for="css">Bezorgen</label>
+                            </div>
+                             
+
+                            <label for="fname">Naam</label>
+                            <input type="text" id="fname" name="name" value="<?php echo $user["firstname"] ?>">
+                            <label for="lname">Adress</label>
+                            <input type="text" id="lname" name="adress" value="<?php echo $user["adress"] ?>">
+
+                            <label for="fname">Postcode</label>
+                            <input type="text" id="fname" name="zipcode" value="<?php echo $user["zipcode"] ?>">
+                            <label for="lname">Plaats</label>
+
+                            <select id="cars" name="city">
+                                <option value="heiloo">Heiloo €12</option>
+                                <option value="limmen">Limmen €12</option>
+                                <option value="akersloot">Akersloot €15</option>
+
+                            </select>
+
+                            <label for="lname">Telefoonnummer</label>
+                            <input type="text" id="lname" name="number" value="<?php echo $user["phonenumber"] ?>">
 
 
-                    <label for="fname">Naam</label>
-                    <input type="text" id="fname" name="name" value="<?php echo $user["firstname"] ?>">
-                    <label for="lname">Adress</label>
-                    <input type="text" id="lname" name="adress" value="<?php echo $user["adress"] ?>">
-
-                    <label for="fname">Postcode</label>
-                    <input type="text" id="fname" name="zipcode" value="<?php echo $user["zipcode"] ?>">
-                    <label for="lname">Plaats</label>
-                    <input type="text" id="lname" name="city" value="<?php echo $user["city"] ?>">
-
-                    <label for="lname">Telefoonnummer</label>
-                    <input type="text" id="lname" name="number" value="<?php echo $user["phonenumber"] ?>">
 
 
 
 
 
+
+                        </div>
+                        <div class="ophalen">
+                            <div class="bezorgenophalen">
+                                  <input type="radio" id="javascript" name="method" value="ophalen">
+                                  <label for="javascript">Ophalen (gratis)</label>
+                            </div>
+                             
+
+
+                        </div>
+
+
+
+                    </div>
 
                     <div class="form-group">
                         <!-- Date input -->
                         <label class="control-label" for="date">Date</label>
                         <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="date" />
                     </div>
+                    <input type="hidden" id="winkelmandids" name="productid" value="">
 
 
-                    <div class="bezorgenophalen">
-                          <input type="radio" id="css" name="method" value="bezorgen">
-                          <label for="css">Bezorgen</label>
-                    </div>
-                    <div class="bezorgenophalen">
-                          <input type="radio" id="javascript" name="method" value="ophalen">
-                          <label for="javascript">Ophalen</label>
-                    </div>
-
-
-                    <button class="btn btn-light" name="submit" type="submit" onclick="deleteProduct()">Submit</button>
+                    <button class="submitwinkelwagen" name="submit" type="submit"
+                        onclick="deleteProduct()">Submit</button>
                 </form>
 
             </div>

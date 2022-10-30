@@ -31,14 +31,15 @@ include 'php/database.php';
 
             <div class="bijelkaar2">
                 <div class="een1">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt
-                        ut
-                        labore et
-                        dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                        ex
-                        ea
+                    <p>Mannengrottenstraat 77 <br>
+                        1432 CN Aalsmeer<br>
+                        Nederland<br>
+                        Email: info@deroset.nl<br>
+                        TEL +31 (0)6-14144332<br>
+
+                        KvK nr: 34346617<br>
+
+                        BTW nr: NL002087129B59
 
                     </p>
                 </div>

@@ -1,6 +1,6 @@
 <?php  // hallo met pc
 include 'php/database.php';
-session_start();
+
 $id = $_GET["id"];
 
 $sql = "SELECT * FROM products WHERE id = $id LIMIT 1";

@@ -1,6 +1,6 @@
 <?php
 
-session_start();
+require 'database.php';
 if (isset($_POST["submit"])) {
     $id = $_POST["id"];
     
@@ -34,7 +34,7 @@ if (isset($_POST["submit"])) {
 
         //database connectie
 
-        require 'database.php';
+        
 
         // $sql = "UPDATE users SET
         //  firstname = '$voornaam',

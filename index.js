@@ -1,6 +1,7 @@
 const ADD_NOTITIE = document.getElementById("addbutton");
 const VERWIJDER_BUTTON = document.getElementById("buttondelete");
 const WINKELMAND = document.getElementById("winkelmand");
+const WINKELMANDID = document.getElementById("winkelmandids");
 var productPrijs = document.getElementById("productprijs");
 var productNaam = document.getElementById("productnaam");
 
@@ -44,6 +45,27 @@ function haalCart() {
 }
 
 haalCart();
+
+function getIds() {
+  let cart = JSON.parse(localStorage.getItem("cart"));
+
+  // for (let i = 0; i < cart.length; i++) {
+  // var hoi = (WINKELMANDID.value += cart[i].id + ",");
+  // var hoi2 = hoi.slice(0, -1);
+  // var hoi = cart[i].id + ",";
+  // WINKELMANDID.value += hoi;
+  // }
+
+  cart.forEach((item, index) => {
+    if (index === cart.length - 1) {
+      WINKELMANDID.value += `${item.id}`;
+      return;
+    }
+    WINKELMANDID.value += `${item.id},`;
+  });
+}
+
+getIds();
 
 function deleteProduct() {
   localStorage.removeItem("cart");

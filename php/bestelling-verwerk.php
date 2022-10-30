@@ -1,5 +1,5 @@
 <?php
-
+ include 'database.php';
 if (isset($_POST["submit"])) { // als submit gevult is en niet staat aan NULL voert hij de statement uit
     if (
         !empty($_POST["date"])     // ze moeten allemaal true zijn aka ze moeten niet leeg zijn
@@ -13,33 +13,37 @@ if (isset($_POST["submit"])) { // als submit gevult is en niet staat aan NULL vo
         // && !empty($_POST["city"])
 
     ) {
-        session_start();
+       
         // variabeles aan het zetten door post method te gebruiken
         $id = $_SESSION['gebruiker_id'];
         $date = $_POST["date"];
         $method = $_POST["method"];
-        $productid = $_POST["idvanproduct"];
         $recieved = "no";
         $name = $_POST["name"];
         $adress = $_POST["adress"];
         $zipcode = $_POST["zipcode"];
         $city = $_POST["city"];
         $phonenumber = $_POST["phonenumber"];
-    
 
 
 
+        $products = $_POST["productid"];
+        
+        $product = explode(",", $products);
 
+        foreach ($product as $prod) : 
 
+            $sql = "INSERT INTO orders (user_id, product_id, date, ordermethod, isRecieved, name, adress, zipcode, city, phonenumber)
+            VALUES ('$id', '$prod','$date', '$method', '$recieved','$name', '$adress','$zipcode', '$city', '$phonenumber')";
+
+            // Voer de INSERT INTO STATEMENT uit/ execute de query in het database
+            mysqli_query($conn, $sql);
+        endforeach;
         //database connectie
-        include 'database.php';
+        
 
 
-        $sql = "INSERT INTO orders (user_id, product_id, date, ordermethod, isRecieved, name, adress, zipcode, city, phonenumber)
-                VALUES ('$id', '$productid','$date', '$method', '$recieved','$name', '$adress','$zipcode', '$city', '$phonenumber')";
-
-        // Voer de INSERT INTO STATEMENT uit/ execute de query in het database
-        mysqli_query($conn, $sql);
+      
 
         echo "Inserted successfully";
         mysqli_close($conn); // Sluit de database verbinding want er hoeven geen queries meer uitgevoerd te worden

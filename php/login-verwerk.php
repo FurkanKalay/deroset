@@ -1,11 +1,11 @@
 <?php
 
-session_start();
+require 'database.php';
 
 if (isset($_POST['submit']) && $_POST['email'] != '' && $_POST['password'] != '') {
     //code wordt uitgevoerd als het formulier goed wordt ingevuld
 
-    require 'database.php';
+    
     $wachtwoord = $_POST['password'];
     $email = $_POST['email'];
     $sql = "SELECT * FROM users WHERE email ='$email' AND password ='$wachtwoord'";

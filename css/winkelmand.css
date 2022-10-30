@@ -2,15 +2,31 @@
   border-color: plum;
   border-style: solid;
 }
+.bezorgenophalen {
+}
+.bezorgen label {
+  margin-bottom: 3%;
+}
 form {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 50%;
 }
-.bezorgenophalen {
+.allesinform {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+.bezorgen {
+  display: flex;
+  flex-direction: column;
+}
+.ophalen {
+  display: flex;
+  flex-direction: column;
 }
 .buttondelete {
   margin: 1%;
@@ -26,9 +42,12 @@ form {
 .winkelmanden form label {
   margin: 2px;
 }
-.winkelmanden form input {
+.winkelmanden form input,
+.winkelmanden form select {
   margin: 2px;
+  margin-bottom: 6px;
 }
+
 .winkelmanden {
   display: flex;
   flex-direction: column;
@@ -43,6 +62,12 @@ form {
   justify-content: space-around;
   align-items: center;
   width: 100%;
+}
+.submitwinkelwagen {
+  margin-top: 2%;
+}
+form .form-group {
+  margin-top: 3%;
 }
 @media screen and (max-width: 1025px) {
   .inwinkelmand {
@@ -59,5 +84,14 @@ form {
     align-items: center;
     height: 100%;
     width: 100%;
+  }
+  .ophalen {
+    margin-left: 5%;
+  }
+  .winkelmand {
+    margin-bottom: 20px;
+  }
+  .submitwinkelwagen {
+    margin: 5%;
   }
 }

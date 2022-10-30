@@ -36,40 +36,32 @@ include 'php/database.php';
 
             <div class="bijelkaar">
                 <div class="een">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt
-                        ut
-                        labore et
-                        dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                        ex
-                        ea
+                    <p>De Roset is al jaren trots partner van het Dutch Pastry Team samen met Andros Chef. Het
+                        Dutch Pastry Team bestaat uit professionele en vakbekwame patissiers die het ambacht
+                        'patisserie' verheffen tot kunst. Jaarlijks organiseert het team de vakwedstrijden 'Dutch Pastry
+                        Award' en 'De Beste Bonbon van Nederland'.
 
 
                     </p>
                 </div>
-                <img class="eenplaatje" src="assets/rozecake.jpeg" alt="" srcset="">
+                <img class="eenplaatje" src="assets/overons11.jpg" alt="" srcset="">
             </div>
 
             <div class="twee">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut
-                    labore et
-                    dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex
-                    ea
+                <p>Onze dienstverlening gaat dan ook verder dan alleen maar het leveren van producten. Juist vanwege
+                    onze ijsbereiders achtergrond zijn wij ook instaat om u ijssalon naar een hoger niveau te tillen of
+                    u te helpen met het opstarten van een nieuwe ijssalon. Mocht je een smaak willen uitproberen? Ook
+                    dat kan natuurlijk, wij hanteren immers geen minimum order waarde zoals de anderen vaak wel hebben
+                    en sturen kleine bestellingen gewoon op.
 
                 </p>
             </div>
             <div class="bijelkaar">
-                <img class="tweeplaatje" src="assets/redvelvet.jpg" alt="" srcset="">
+                <img class="tweeplaatje" src="assets/overons2.jpg" alt="" srcset="">
                 <div class="een">
-                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt
-                        ut labore et
-                        dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    <p> De Roset levert dus niet alleen aan ijssalons en ijsbereiders maar ook aan vele
+                        bakkerijen, patissiers en chocolatiers in de Benelux. Van daaruit is ook het importeurschap
+                        ontstaan van Silikomart Professional.
 
 
                     </p>

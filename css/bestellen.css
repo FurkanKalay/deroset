@@ -83,3 +83,10 @@
   font-size: 14px;
   opacity: 1;
 }
+.smaken {
+  display: flex;
+  flex-direction: column;
+}
+.smaken h2 {
+  margin: 2%;
+}

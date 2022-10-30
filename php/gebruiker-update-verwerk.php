@@ -1,6 +1,6 @@
 <?php
+require 'database.php';
 
-session_start();
 if (isset($_POST["submit"])) {
     $id = $_SESSION['gebruiker_id'];
 

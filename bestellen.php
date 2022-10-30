@@ -35,30 +35,36 @@ if ($result = mysqli_query($conn, $sql)) {
 ?>
 
     <div class="front">
+        <div class="smaken">
+            <h2>Smaken</h2>
+            <div class="bestellen">
 
-        <div class="bestellen">
-            <?php foreach ($melding as $mel) : ?>
 
-            <div class="flip-card">
+                <?php foreach ($melding as $mel) : ?>
 
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="smaken/<?php echo $mel["picture"] ?>" alt="Avatar"
-                            style="width:100%;height:100%;border-radius:50%;">
-                    </div>
-                    <div class="flip-card-back">
-                        <p id="productnaam"><?php echo $mel["name"] ?></p>
-                        <p id="productprijs">$<?php echo $mel["price_per_kg"] ?></p>
-                        <a href="#" class="addbutton" id="addbutton"
-                            onclick="addProduct('<?php echo $mel['name'] ?>', '$<?php echo $mel['price_per_kg'] ?>', '<?php echo $mel['id'] ?>')">add
-                        </a>
+                <div class="flip-card">
+
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="smaken/<?php echo $mel["picture"] ?>" alt="Avatar"
+                                style="width:100%;height:100%;border-radius:50%;">
+                        </div>
+                        <div class="flip-card-back">
+                            <p id="productnaam"><?php echo $mel["name"] ?></p>
+                            <p id="productprijs">$<?php echo $mel["price_per_kg"] ?></p>
+                            <a href="#" class="addbutton" id="addbutton"
+                                onclick="addProduct('<?php echo $mel['name'] ?>', '$<?php echo $mel['price_per_kg'] ?>', '<?php echo $mel['id'] ?>')">add
+                            </a>
+                        </div>
                     </div>
                 </div>
+
+                <?php endforeach; ?>
+
             </div>
 
-            <?php endforeach; ?>
-
         </div>
+
 
     </div>
 

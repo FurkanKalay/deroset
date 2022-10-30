@@ -1,10 +1,13 @@
 .contact {
   display: flex;
   flex-direction: column;
+  margin: 3%;
 }
 .contact h2 {
+  margin-bottom: 2%;
 }
-.contact .een {
+.contact .een1 p {
+  font-size: 25px;
 }
 .contact .eenplaatje1 {
   max-width: 300px;
@@ -12,6 +15,20 @@
 }
 
 .contact .tweeplaatje2 {
-  max-width: 300px;
-  max-height: 150px;
+  margin-top: 5%;
+  max-height: 300px;
+}
+.contact .bijelkaar2 {
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 1025px) {
+  .contact .bijelkaar2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .een1 {
+    margin-bottom: 1%;
+  }
 }

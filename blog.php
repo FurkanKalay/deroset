@@ -33,15 +33,12 @@ include 'php/database.php';
             <div class="een">
                 <h3>Sinterklaas kwam op bezoek</h3>
                 <div class="parafoto">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt
-                        ut
-                        labore et
-                        dolore gesgesagase
+                    <p>Vandaag kwam Sinterklaas langs we gaven feest door een concert te starten bij ons pand met
+                        sinterklaas liedjes voor de kinderen!
 
 
                     </p>
-                    <img src="assets/icecream.jpg" alt="" srcset="">
+                    <img src="assets/blog1.png" alt="" srcset="">
                 </div>
 
             </div>
@@ -49,17 +46,11 @@ include 'php/database.php';
             <div class="twee">
                 <h3>25 jaar bestaan was een groot succes!</h3>
                 <div class="parafoto">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt
-                        ut
-                        labore et
-                        dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                        ex
-                        ea
-
+                    <p>Dinsdag was onze 25ste verjaardag van onze bedrijf en iedereen kreeg gratis ijs op dinsdag. Maar
+                        let op! Deze hele week is er 50% korting op alle smaken die we hebben dus het feestje is nog
+                        niet voorbij!
                     </p>
-                    <img src="assets/icecream.jpg" alt="" srcset="">
+                    <img src="assets/blog2.jpg" alt="" srcset="">
 
                 </div>
 
