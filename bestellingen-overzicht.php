@@ -7,8 +7,8 @@ include 'php/database.php';
 
 
 
-$sql = "SELECT orders.id as 'orders_id', firstname, name, date, ordermethod, isRecieved FROM orders
-    JOIN users on users.id = orders.user_id
+$sql = "SELECT orders.id as 'orders_id', user_id, name, date, ordermethod, isRecieved, name, adress, zipcode, city, phonenumber FROM orders
+   
     JOIN products on products.id = orders.product_id";
 
 if ($result = mysqli_query($conn, $sql)) {
@@ -48,6 +48,11 @@ if ($result = mysqli_query($conn, $sql)) {
                     <th>isRecieved</th>
                     <th>update</th>
                     <th>delete</th>
+                    <th>accountname</th>
+                    <th>adress</th>
+                    <th>zipcode</th>
+                    <th>city</th>
+                    <th>phonenumber</th>
 
                 </tr>
             </thead>
@@ -55,12 +60,18 @@ if ($result = mysqli_query($conn, $sql)) {
                 <?php foreach ($melding1 as $mel5) : ?>
                 <tr>
                     <td data-label="id"><?php echo $mel5["orders_id"] ?></td>
-                    <td data-label="name"><?php echo $mel5["firstname"] ?></td>
+                    <td data-label="name"><?php echo $mel5["user_id"] ?></td>
                     <td data-label="name"><?php echo $mel5["name"] ?></td>
                     <td data-label="date"><?php echo $mel5["date"] ?></td>
                     <td data-label="ordermethod"><?php echo $mel5["ordermethod"] ?></td>
 
                     <td data-label="recieved"><?php echo $mel5["isRecieved"] ?></td>
+
+                    <td data-label="username"><?php echo $mel5["name"] ?></td>
+                    <td data-label="adress"><?php echo $mel5["adress"] ?></td>
+                    <td data-label="zipcode"><?php echo $mel5["zipcode"] ?></td>
+                    <td data-label="city"><?php echo $mel5["city"] ?></td>
+                    <td data-label="phonenumber"><?php echo $mel5["phonenumber"] ?></td>
 
                     <td data-label="update"><a href="bestellingen-update.php?id=<?php echo $mel5["orders_id"] ?>"
                             class="btn">update</a></td>

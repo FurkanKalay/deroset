@@ -71,7 +71,7 @@ if ($result = mysqli_query($conn, $sql)) {
                             </select>
 
                             <label for="lname">Telefoonnummer</label>
-                            <input type="text" id="lname" name="number" value="<?php echo $user["phonenumber"] ?>">
+                            <input type="text" id="lname" name="phonenumber" value="<?php echo $user["phonenumber"] ?>">
 
 
 
