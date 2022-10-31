@@ -11,9 +11,9 @@
 
 
         <li><a href="contact.php"><i class="fa-solid fa-phone"></i></a></li>
-        <li><a href="winkelmand.php"><i class="fa-solid fa-cart-shopping"></i></a></li>
-        <li><a href="gebruiker-update.php" i class="fa-regular fa-user"></i></a>
-            <?php echo $naam; ?>
+
+        <li><a href="login.php" i class="fa-regular fa-user"></i></a>
+            Login om meer te zien
         </li>
 
 
