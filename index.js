@@ -52,13 +52,15 @@ function getIds() {
   // WINKELMANDID.value += hoi;
   // }
 
-  cart.forEach((item, index) => {
-    if (index === cart.length - 1) {
-      WINKELMANDID.value += `${item.id}`;
-      return;
-    }
-    WINKELMANDID.value += `${item.id},`;
-  });
+  // cart.forEach((item, index) => {
+  //   if (index === cart.length - 1) {
+  //     WINKELMANDID.value += `${item.id}`;
+  //     return;
+  //   }
+  //   WINKELMANDID.value += `${item.id},`;
+  // });
+
+  WINKELMANDID.value = cart.map((item) => item.id).join(",");
 }
 
 getIds();

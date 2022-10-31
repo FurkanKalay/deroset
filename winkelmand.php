@@ -100,7 +100,7 @@ if ($result = mysqli_query($conn, $sql)) {
                         <label class="control-label" for="date">Date</label>
                         <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="date" />
                     </div>
-                    <input type="hidden" id="winkelmandids" name="productid" value="">
+                    <input type="text" id="winkelmandids" name="productid" value="">
 
 
                     <button class="submitwinkelwagen" name="submit" type="submit"
