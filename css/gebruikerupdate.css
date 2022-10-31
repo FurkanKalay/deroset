@@ -1,5 +1,19 @@
 .hoi2 form {
   margin: 0;
   width: 100%;
+
   background-color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.hoi2 {
+}
+.hoi {
+  align-self: center;
+  place-self: center;
+  justify-items: center;
+  align-items: center;
 }

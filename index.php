@@ -32,6 +32,11 @@ include 'php/database.php';
 ?>
 
     <div class="front">
+        <div class="index">
+            <h2>Welkom op het website van De Roset!</h2>
+            <p>Klik op het navigatie balk om onze website te bekijken!</p>
+        </div>
+
 
 
     </div>

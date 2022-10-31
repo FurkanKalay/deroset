@@ -29,7 +29,19 @@ form {
   flex-direction: column;
 }
 .buttondelete {
-  margin: 1%;
+  width: 100%;
+  text-decoration: none;
+  line-height: 35px;
+  display: inline-block;
+  background-color: plum;
+  font-weight: medium;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  font-size: 14px;
+  opacity: 1;
 }
 .winkelmand {
   display: flex;

@@ -33,6 +33,14 @@ body {
   border-radius: 5%;
   box-shadow: 5px 5px 8px rgb(132, 95, 167);
 }
+.index {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+  padding: 10%;
+}
 
 @media screen and (max-width: 1025px) {
   body {

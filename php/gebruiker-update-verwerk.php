@@ -50,7 +50,7 @@ if (isset($_POST["submit"])) {
         `adress`='$adress',
         `zipcode`='$zipcode',
         `city`='$city',
-        `role`='klant'
+        
          WHERE id = '$id'";
 
         // Voer de INSERT INTO STATEMENT uit
