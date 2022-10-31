@@ -12,6 +12,6 @@
         <p>Akersloot</p>
     </div>
     <div class="voorwaarden">
-        <p><a href="">Onze voorwaarden</a></p>
+        <p><a href="#">Onze voorwaarden</a></p>
     </div>
 </footer>

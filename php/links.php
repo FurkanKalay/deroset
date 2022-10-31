@@ -11,3 +11,5 @@
 <script src="index.js" async></script>
 <link rel="stylesheet" href="css/winkelmand.css">
 <link rel="stylesheet" href="css/gebruikerupdate.css">
+<title>DeRoset</title>
+<meta name=description content="website van De Roset">
