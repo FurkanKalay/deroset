@@ -60,7 +60,10 @@ body {
     padding: 0;
     flex-wrap: wrap;
   }
-  header ul li a {
+  header ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   header ul li {
     width: 25vw;
