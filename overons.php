@@ -36,10 +36,7 @@ include 'php/database.php';
 
             <div class="bijelkaar">
                 <div class="een">
-                    <p>De Roset is al jaren trots partner van het Dutch Pastry Team samen met Andros Chef. Het
-                        Dutch Pastry Team bestaat uit professionele en vakbekwame patissiers die het ambacht
-                        'patisserie' verheffen tot kunst. Jaarlijks organiseert het team de vakwedstrijden 'Dutch Pastry
-                        Award' en 'De Beste Bonbon van Nederland'.
+                    <p>De Roset is al jaren trots partner van het Dutch Pastry Team samen met Andros Chef.
 
 
                     </p>
@@ -50,9 +47,7 @@ include 'php/database.php';
             <div class="twee">
                 <p>Onze dienstverlening gaat dan ook verder dan alleen maar het leveren van producten. Juist vanwege
                     onze ijsbereiders achtergrond zijn wij ook instaat om u ijssalon naar een hoger niveau te tillen of
-                    u te helpen met het opstarten van een nieuwe ijssalon. Mocht je een smaak willen uitproberen? Ook
-                    dat kan natuurlijk, wij hanteren immers geen minimum order waarde zoals de anderen vaak wel hebben
-                    en sturen kleine bestellingen gewoon op.
+                    u te helpen met het opstarten van een nieuwe ijssalon.
 
                 </p>
             </div>
@@ -60,8 +55,7 @@ include 'php/database.php';
                 <img class="tweeplaatje" src="assets/overons2.jpg" alt="" srcset="">
                 <div class="een">
                     <p> De Roset levert dus niet alleen aan ijssalons en ijsbereiders maar ook aan vele
-                        bakkerijen, patissiers en chocolatiers in de Benelux. Van daaruit is ook het importeurschap
-                        ontstaan van Silikomart Professional.
+                        bakkerijen.
 
 
                     </p>
